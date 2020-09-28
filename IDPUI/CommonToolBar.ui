@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CommonToolBar</class>
+ <widget class="QToolBar" name="CommonToolBar">
+  <property name="enabled">
+   <bool>false</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>643</width>
+    <height>85</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CommonToolBar</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>20</width>
+    <height>20</height>
+   </size>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextUnderIcon</enum>
+  </property>
+  <action name="actionThematic">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/commonToolBar/thematic.png</normaloff>:/images/commonToolBar/thematic.png</iconset>
+   </property>
+   <property name="text">
+    <string>制图</string>
+   </property>
+  </action>
+  <action name="actionText">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/commonToolBar/text.png</normaloff>:/images/commonToolBar/text.png</iconset>
+   </property>
+   <property name="text">
+    <string>文字</string>
+   </property>
+  </action>
+  <action name="actionVLine">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/commonToolBar/vLine.png</normaloff>:/images/commonToolBar/vLine.png</iconset>
+   </property>
+   <property name="text">
+    <string>直线</string>
+   </property>
+  </action>
+  <action name="actionSLine">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/commonToolBar/sLine.png</normaloff>:/images/commonToolBar/sLine.png</iconset>
+   </property>
+   <property name="text">
+    <string>曲线</string>
+   </property>
+  </action>
+  <action name="actionFLine">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/commonToolBar/fLine.png</normaloff>:/images/commonToolBar/fLine.png</iconset>
+   </property>
+   <property name="text">
+    <string>折线</string>
+   </property>
+  </action>
+  <action name="actionRect">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/commonToolBar/rect.png</normaloff>:/images/commonToolBar/rect.png</iconset>
+   </property>
+   <property name="text">
+    <string>矩形</string>
+   </property>
+  </action>
+  <action name="actionRound">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/commonToolBar/round.png</normaloff>:/images/commonToolBar/round.png</iconset>
+   </property>
+   <property name="text">
+    <string>圆形</string>
+   </property>
+  </action>
+  <action name="actionMouse">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/commonToolBar/pard.png</normaloff>:/images/commonToolBar/pard.png</iconset>
+   </property>
+   <property name="text">
+    <string>鼠标</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/commonToolBar/delete.png</normaloff>:/images/commonToolBar/delete.png</iconset>
+   </property>
+   <property name="text">
+    <string>删除</string>
+   </property>
+  </action>
+  <action name="actionMagnifier">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/commonToolBar/magnifier.png</normaloff>:/images/commonToolBar/magnifier.png</iconset>
+   </property>
+   <property name="text">
+    <string>放大镜</string>
+   </property>
+  </action>
+  <action name="actionEdit">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/commonToolBar/eidt.png</normaloff>:/images/commonToolBar/eidt.png</iconset>
+   </property>
+   <property name="text">
+    <string>编辑</string>
+   </property>
+  </action>
+  <addaction name="actionThematic"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="mainwindow.qrc"/>
+ </resources>
+ <connections/>
+</ui>

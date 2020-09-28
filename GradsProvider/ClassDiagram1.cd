@@ -1,0 +1,634 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CressmanInterpolation" Collapsed="true">
+    <Position X="18.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAACAQAAAAAAAAAAAAAEAgAAEAAAAAAAAA=</HashCode>
+      <FileName>CressmanInterpolation.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeneralBarb" Collapsed="true">
+    <Position X="5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAUQAgAAAAAAAAAAQABgAAAAAAAAAgAAAAAAAAAACA=</HashCode>
+      <FileName>GeneralBarb.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeneralContour" Collapsed="true">
+    <Position X="7.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAACAAAAAAAQAAgAAAAAAAAAAAAAAAAAAAADA=</HashCode>
+      <FileName>GeneralContour.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeneralGird" Collapsed="true">
+    <Position X="9.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>GeneralGird.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeneralPolyLineBar" Collapsed="true">
+    <Position X="11.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAgAAAABAAAAAAAAAAAAAAASA=</HashCode>
+      <FileName>GeneralPolylineBar.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeneralShaded" Collapsed="true">
+    <Position X="14" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AwAAAAAAAAAAAgAAAQAAggAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>GeneralShaded.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeneralStream" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAgAAAAAAQAAAQABAAAAAAgAAAAAAAEAAAAAACA=</HashCode>
+      <FileName>GeneralStream.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeneralVector" Collapsed="true">
+    <Position X="2.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAgAAAAAAAAAAQABAAAAAAABAEAAAAEAAAAAACA=</HashCode>
+      <FileName>GeneralVector.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InverseDistanceInterpolation" Collapsed="true">
+    <Position X="21.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAYJACAAAQAAAAACACABEAABACIAECBAAAAAAI=</HashCode>
+      <FileName>Interpolation_InverseDistance.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CInterpolation_NaturalNeighbour" Collapsed="true">
+    <Position X="16.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAACAAAAAAAQAAAAAAACAAAAAAAAAAECAAAAAAAA=</HashCode>
+      <FileName>Interpolation_NaturalNeighbour.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeteorologyProducts" Collapsed="true">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MeteorologyProducts.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NinePointSmoother" Collapsed="true">
+    <Position X="23.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAACAAAAAAAAAAQAAAg=</HashCode>
+      <FileName>NinePointSmoother.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GradsProvider" Collapsed="true">
+    <Position X="20" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAgAAAACIBUAhQAAAAAAADQBQBECAECwBAAFAARA=</HashCode>
+      <FileName>GradsProvider.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="__unnamed_struct_0146_1" Collapsed="true">
+    <Position X="13" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAIAAAAIAAACAAAAAAACAAAAEAAAIAQAAQAAAAA=</HashCode>
+      <FileName>gabufr.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="cxclock" Collapsed="true">
+    <Position X="23.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAGAAAAEAAAAAAAAgAAAIAAAAQAAAAAAAAiAQACAAA=</HashCode>
+      <FileName>gagx.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="msgbuf" Collapsed="true">
+    <Position X="25.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAACAAAAAAAAAAAAIAAQAAAAAAAA=</HashCode>
+      <FileName>gauser.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="gag2" Collapsed="true">
+    <Position X="27" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABIAAgIAAAAAQCwAKImpBAAAEAAhgAAAAQAAAIAAAAQ=</HashCode>
+      <FileName>grib2scan.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="gsrecd" Collapsed="true">
+    <Position X="23.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QBAAACAAAAAAAAAAAAAAAIAAAAABAAAQAAAAAAAAAEA=</HashCode>
+      <FileName>gscrpt.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="gsfdef" Collapsed="true">
+    <Position X="18.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAACAAAAAAAAAAAAAEAAAABAAAAAAAAAA=</HashCode>
+      <FileName>gscrpt.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="gsvar" Collapsed="true">
+    <Position X="25.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAABAAAAAA=</HashCode>
+      <FileName>gscrpt.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="gsfnc" Collapsed="true">
+    <Position X="20" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAACAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>gscrpt.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="gsiob" Collapsed="true">
+    <Position X="21.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAIAAAAAAAAAEAAAABAAAAAAAAAA=</HashCode>
+      <FileName>gscrpt.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="gscmn" Collapsed="true">
+    <Position X="16.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAgQAAAAAAgAAAIAAAABwAJggAEAAAAAAAICAAAAACA=</HashCode>
+      <FileName>gscrpt.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="stck" Collapsed="true">
+    <Position X="18.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAIAAAAEAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>gscrpt.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="gxclbuf" Collapsed="true">
+    <Position X="27" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAICAAAAAAAAAQACAAAAAAAAUAACAAAAAAAAAAAQ=</HashCode>
+      <FileName>gxcntrs.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="CressmanParam" Collapsed="true">
+    <Position X="21.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIQQAAAAgAAAQACABAAAAAAAAAAAoAAAAAAAAAQA=</HashCode>
+      <FileName>CressmanInterpolation.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="__unnamed_struct_0147_1" Collapsed="true">
+    <Position X="9" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAYAAAAIACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>gabufr.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="gabufr_val_struct" Collapsed="true">
+    <Position X="5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAgABgAQIEAAA=</HashCode>
+      <FileName>gabufr.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="__unnamed_struct_0147_2" Collapsed="true">
+    <Position X="9" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAEAAA=</HashCode>
+      <FileName>gabufr.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="gabufr_msg_struct" Collapsed="true">
+    <Position X="1" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAg0ABACAAAQAAAAAAAAQAACAAQAAAQAAAACAAoIAAA=</HashCode>
+      <FileName>gabufr.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="__unnamed_struct_0147_3" Collapsed="true">
+    <Position X="5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAACAIAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>gabufr.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="gabufr_varid_struct" Collapsed="true">
+    <Position X="1" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAABgAAIAAAA=</HashCode>
+      <FileName>gabufr.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="dt" Collapsed="true">
+    <Position X="25.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAIBAAAAAABgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>grads.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="gaclct" Collapsed="true">
+    <Position X="16.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAIAAAAA=</HashCode>
+      <FileName>grads.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="gawgds" Collapsed="true">
+    <Position X="16.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>grads.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="gamfcmn" Collapsed="true">
+    <Position X="20" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAgAAAAAAAAMIYQAg=</HashCode>
+      <FileName>grads.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="gacmn" Collapsed="true">
+    <Position X="18.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>87q676P9ffbPz2bPJf98x/jqk9/fGI4/i+zR/dNtFHo=</HashCode>
+      <FileName>grads.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="gachsub" Collapsed="true">
+    <Position X="28.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAABCAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>grads.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="gaens" Collapsed="true">
+    <Position X="21.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAEAAAAAAAAAEAAEAAAIAAAAAAAA=</HashCode>
+      <FileName>grads.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="gastat" Collapsed="true">
+    <Position X="23.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAABAAAAABAIBggCCAAgBAAAAACAAAIAAAAA=</HashCode>
+      <FileName>grads.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="gafile" Collapsed="true">
+    <Position X="23.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wDDVxCmYdYIdtnggACiKQBAo2BQVAMcAEAZCY1kkFiU=</HashCode>
+      <FileName>grads.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="gagrid" Collapsed="true">
+    <Position X="28.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEBAECAAAIJQIgYUAEABAgAAQAAJQIAkAAEAAJAFKCA=</HashCode>
+      <FileName>grads.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="gaattr" Collapsed="true">
+    <Position X="27" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAQCAAAAAAACFACAAAAAAAAIAAAA=</HashCode>
+      <FileName>grads.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="bufrtimeinfo" Collapsed="true">
+    <Position X="20" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAACAAAAAAAABAAAAAAAAAAAIAACAE=</HashCode>
+      <FileName>grads.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="bufrinfo" Collapsed="true">
+    <Position X="18.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgDBAAAAAAAAAABAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>grads.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="bufrhdr" Collapsed="true">
+    <Position X="16.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAIAgAAAAAAAAAAASADAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>grads.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="rpthdr" Collapsed="true">
+    <Position X="28.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAEAAAIAACAAAAAAAAAAAAAQAAAAAAgA=</HashCode>
+      <FileName>grads.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="stninf" Collapsed="true">
+    <Position X="20" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAgAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>grads.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="garpt" Collapsed="true">
+    <Position X="21.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAIIAIAAAAIAAAAACACAAAAAIAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>grads.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="gastn" Collapsed="true">
+    <Position X="25.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAkECBBAAAAAAAAAigCCAAIABAIEIAhAgIEEAAo=</HashCode>
+      <FileName>grads.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="gavar" Collapsed="true">
+    <Position X="28.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAiAAAAAAAAAASAQAAAAACAHEAEQJAAAQAAAAAAHAAA=</HashCode>
+      <FileName>grads.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="gafunc" Collapsed="true">
+    <Position X="25.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAEAAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>grads.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="gaufb" Collapsed="true">
+    <Position X="27" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAEgAAACAAAAAAEAAAAAAAAkAAAAAAAAAICAAAA=</HashCode>
+      <FileName>grads.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="gadefn" Collapsed="true">
+    <Position X="20" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIABAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>grads.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="smem" Collapsed="true">
+    <Position X="16.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>grads.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="gaindx" Collapsed="true">
+    <Position X="16.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAQAAAEAAEAAAAQgAAAAAAABAAAAAAAAAggAAAA=</HashCode>
+      <FileName>grads.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="gaindxb" Collapsed="true">
+    <Position X="18.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>grads.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="mapprj" Collapsed="true">
+    <Position X="23.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQIAAAAABgAAAAJBCAAAAAAAAAAAAAAAAAAAAIAAAU=</HashCode>
+      <FileName>gx.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="gobj" Collapsed="true">
+    <Position X="25.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAQAAAAEADAAAAACABAAAAAAA=</HashCode>
+      <FileName>gx.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="gbtn" Collapsed="true">
+    <Position X="18.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAiSAAAAAAAAkAAACAAAAAAACAIAUEUAlgAJAAAAA=</HashCode>
+      <FileName>gx.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="grbb" Collapsed="true">
+    <Position X="27" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAACAAAAAAAAAAAAAABAABgAADAAAAAAAA=</HashCode>
+      <FileName>gx.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="gdmu" Collapsed="true">
+    <Position X="21.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAiSAAAAKBBVACAACkAAAAAACAIAUAQAhgAJAAAAA=</HashCode>
+      <FileName>gx.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="gdlg" Collapsed="true">
+    <Position X="20" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAiSAAAAAAAAAAAACAAAAAAACAAAQAQAhgAAAAAAA=</HashCode>
+      <FileName>gx.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="gevent" Collapsed="true">
+    <Position X="23.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAACAAAAAAAAAQAAAAAAAAABAAAAQABgAAAAAAA=</HashCode>
+      <FileName>gx.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="mapopt" Collapsed="true">
+    <Position X="21.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IggAAAAAAECAACAAAAgAAAAAAAAAAAACIAAAAABBAAA=</HashCode>
+      <FileName>gx.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="xinfo" Collapsed="true">
+    <Position X="25.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAMIQQAA=</HashCode>
+      <FileName>gx.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="gxcntr" Collapsed="true">
+    <Position X="28.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAIAAAAAAADAAAAAAAAIAAABiAAAAAAAAAAAAgAE=</HashCode>
+      <FileName>gx.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="XPoint" Collapsed="true">
+    <Position X="27" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAAAA=</HashCode>
+      <FileName>gxX.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="XFILLPOINT" Collapsed="true">
+    <Position X="23.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAgAAAAAAAAAAAAAAAAAEAAAAAAQEQAAAAAAAAA=</HashCode>
+      <FileName>gxX.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="lineData" Collapsed="true">
+    <Position X="18.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAUEAAAAAAAAAA=</HashCode>
+      <FileName>gxX.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="LineTextValue" Collapsed="true">
+    <Position X="20" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAAAA=</HashCode>
+      <FileName>gxX.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="WindBarbData" Collapsed="true">
+    <Position X="21.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAABggAAAAAA=</HashCode>
+      <FileName>gxX.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="IDWParam" Collapsed="true">
+    <Position X="16.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAACAAgAACQACQAAAAACAEAAAApAAAAAAAAAUA=</HashCode>
+      <FileName>Interpolation_InverseDistance.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="NNIParam" Collapsed="true">
+    <Position X="27" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAgAAAQACAAAAAAAAAAAAAoAAAAIAAAAQA=</HashCode>
+      <FileName>Interpolation_NaturalNeighbour.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="GridInfo" Collapsed="true">
+    <Position X="28.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAoAAAAAAAAAAIIAAAgAAAAAAAAQQgAAAAAABA=</HashCode>
+      <FileName>GradsProvider.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="gabufr_parseinf" Collapsed="true">
+    <Position X="13" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>gabufr.cpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="gabufr_varinf" Collapsed="true">
+    <Position X="9" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>gabufr.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="gabufr_val" Collapsed="true">
+    <Position X="5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>gabufr.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="gabufr_tbl_inf" Collapsed="true">
+    <Position X="9" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>gabufr.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="gabufr_msg" Collapsed="true">
+    <Position X="1" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>gabufr.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="gabufr_dset" Collapsed="true">
+    <Position X="5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>gabufr.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="gabufr_varid" Collapsed="true">
+    <Position X="1" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>gabufr.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="gadouble" Collapsed="true">
+    <Position X="16.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>gatypes.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="gafloat" Collapsed="true">
+    <Position X="18.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>gatypes.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="gaint" Collapsed="true">
+    <Position X="20" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>gatypes.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="gaPixel" Collapsed="true">
+    <Position X="23.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>gatypes.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="gauint" Collapsed="true">
+    <Position X="25.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>gatypes.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="galint" Collapsed="true">
+    <Position X="21.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>gatypes.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="off_t" Collapsed="true">
+    <Position X="27" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>gatypes.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="VECTOR_UNIT" Collapsed="true">
+    <Position X="28.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneralPolylineBar.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

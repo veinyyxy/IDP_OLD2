@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DefaultToolBar</class>
+ <widget class="QToolBar" name="DefaultToolBar">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>509</width>
+    <height>83</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DefaultToolBar</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>20</width>
+    <height>20</height>
+   </size>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextUnderIcon</enum>
+  </property>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/defaultToolBar/open.png</normaloff>:/images/defaultToolBar/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开</string>
+   </property>
+   <property name="toolTip">
+    <string>打开</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/defaultToolBar/newproject.png</normaloff>:/images/defaultToolBar/newproject.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建工程</string>
+   </property>
+   <property name="toolTip">
+    <string>新建工程</string>
+   </property>
+  </action>
+  <action name="actionConfig">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/defaultToolBar/config.png</normaloff>:/images/defaultToolBar/config.png</iconset>
+   </property>
+   <property name="text">
+    <string>配置</string>
+   </property>
+   <property name="toolTip">
+    <string>系统配置</string>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/defaultToolBar/help.png</normaloff>:/images/defaultToolBar/help.png</iconset>
+   </property>
+   <property name="text">
+    <string>系统帮助</string>
+   </property>
+   <property name="toolTip">
+    <string>系统帮助</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/defaultToolBar/exit.png</normaloff>:/images/defaultToolBar/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="toolTip">
+    <string>退出系统</string>
+   </property>
+  </action>
+  <addaction name="actionOpen"/>
+  <addaction name="separator"/>
+  <addaction name="actionExit"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="mainwindow.qrc"/>
+ </resources>
+ <connections/>
+</ui>

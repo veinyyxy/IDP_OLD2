@@ -1,0 +1,626 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1D199E03-FFE8-48A8-A4E5-FA40B450EE69}</ProjectGuid>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Debug\QTDIRDebug.props" />
+    <Import Project="..\Debug\OSGDebug.props" />
+    <Import Project="..\Debug\OSGEARTH.props" />
+    <Import Project="..\Debug\GDALDebug.props" />
+    <Import Project="..\Debug\GEOSDebug.props" />
+    <Import Project="..\Debug\VTKDebug.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Release\GDALRelease.props" />
+    <Import Project="..\Release\GEOSRelease.props" />
+    <Import Project="..\Release\OSGRelease.props" />
+    <Import Project="..\Release\OSGEARTH.props" />
+    <Import Project="..\Release\QTDIRRelease.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\$(Configuration)\Bin</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\$(Configuration)\Bin\</OutDir>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\GraphicsControler;..\GISExtend;..\XMLProvider;..\IDPUI;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\GraphicsControler;..\GISExtend;..\XMLProvider;..\IDPUI;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_CORE_LIB;QT_GUI_LIB;QT_XML_LIB;QT_OPENGL_LIB;QT_SVG_LIB;QT_DLL;GRAPHICSCONTROLER_LIB;GEOSONTHEOSG_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\GeosOnTheOsg;.\GeneratedFiles;..\include;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\qtmain;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtXml;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtSvg;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;..\$(Configuration)\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>qtmaind.lib;QtCored4.lib;QtGuid4.lib;QtXmld4.lib;QtOpenGLd4.lib;QtSvgd4.lib;gdal_i.lib;geos_c.lib;geos.lib;osgd.lib;GeosOnTheOsg.lib;OpenThreadsd.lib;osgAnimationd.lib;osgDBd.lib;osgFXd.lib;osgGAd.lib;osgManipulatord.lib;osgParticled.lib;osgPresentationd.lib;osgShadowd.lib;osgSimd.lib;osgTerraind.lib;osgTextd.lib;osgUtild.lib;osgViewerd.lib;osgVolumed.lib;osgWidgetd.lib;GraphicsControler.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>..\$(Configuration)\Lib\$(ProjectName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_XML_LIB;QT_OPENGL_LIB;QT_SVG_LIB;GEOSONTHEOSG_LIB;GRAPHICSCONTROLER_LIB;QT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\GeosOnTheOsg;..\include;.\GeneratedFiles;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\qtmain;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtXml;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtSvg;.\;..\GraphicsControler;..\GISExtend;..\XMLProvider;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;..\$(Configuration)\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>QtCore4.lib;QtGui4.lib;QtXml4.lib;QtSvg4.lib;QtOpenGL4.lib;gdal_i.lib;OpenThreads.lib;osg.lib;geos.lib;GeosOnTheOsg.lib;osgDB.lib;osgFX.lib;osgGA.lib;osgManipulator.lib;osgParticle.lib;osgPresentation.lib;osgShadow.lib;osgSim.lib;osgTerrain.lib;osgText.lib;osgUtil.lib;osgViewer.lib;osgVolume.lib;osgWidget.lib;GraphicsControler.lib;GISExtend.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>..\$(Configuration)\Lib\$(ProjectName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="CipasComposer.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_DLL -DGRAPHICSCONTROLER_LIB -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\GeneratedFiles" "-I.\..\include" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I." "-I." "-I." "-I." "CipasComposer.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DGEOSONTHEOSG_LIB -DGRAPHICSCONTROLER_LIB -DQT_DLL -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\..\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I.\..\GraphicsControler" "-I.\..\GISExtend" "-I.\..\XMLProvider" "-I." "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I." "-I." "-I." "CipasComposer.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="CipasTemplateTree.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_DLL -DGRAPHICSCONTROLER_LIB -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\GeneratedFiles" "-I.\..\include" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I." "-I." "-I." "-I." "CipasTemplateTree.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DGEOSONTHEOSG_LIB -DGRAPHICSCONTROLER_LIB -DQT_DLL -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\..\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I.\..\GraphicsControler" "-I.\..\GISExtend" "-I.\..\XMLProvider" "-I." "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I." "-I." "-I." "CipasTemplateTree.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="CipasComposerView.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_DLL -DGRAPHICSCONTROLER_LIB -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\GeneratedFiles" "-I.\..\include" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I." "-I." "-I." "-I." "CipasComposerView.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DGEOSONTHEOSG_LIB -DGRAPHICSCONTROLER_LIB -DQT_DLL -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\..\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I.\..\GraphicsControler" "-I.\..\GISExtend" "-I.\..\XMLProvider" "-I." "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I." "-I." "-I." "CipasComposerView.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="CipasComposerItemWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_DLL -DGRAPHICSCONTROLER_LIB -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\GeneratedFiles" "-I.\..\include" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I." "-I." "-I." "-I." "CipasComposerItemWidget.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DGEOSONTHEOSG_LIB -DGRAPHICSCONTROLER_LIB -DQT_DLL -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\..\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I.\..\GraphicsControler" "-I.\..\GISExtend" "-I.\..\XMLProvider" "-I." "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I." "-I." "-I." "CipasComposerItemWidget.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="CipasComposerPictureWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_DLL -DGRAPHICSCONTROLER_LIB -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\GeneratedFiles" "-I.\..\include" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I." "-I." "-I." "-I." "CipasComposerPictureWidget.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DGEOSONTHEOSG_LIB -DGRAPHICSCONTROLER_LIB -DQT_DLL -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\..\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I.\..\GraphicsControler" "-I.\..\GISExtend" "-I.\..\XMLProvider" "-I." "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I." "-I." "-I." "CipasComposerPictureWidget.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="CipasCompositionWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_DLL -DGRAPHICSCONTROLER_LIB -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\GeneratedFiles" "-I.\..\include" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I." "-I." "-I." "-I." "CipasCompositionWidget.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DGEOSONTHEOSG_LIB -DGRAPHICSCONTROLER_LIB -DQT_DLL -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\..\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I.\..\GraphicsControler" "-I.\..\GISExtend" "-I.\..\XMLProvider" "-I." "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I." "-I." "-I." "CipasCompositionWidget.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="CipasComposerLabelWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_DLL -DGRAPHICSCONTROLER_LIB -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\GeneratedFiles" "-I.\..\include" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I." "-I." "-I." "-I." "CipasComposerLabelWidget.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DGEOSONTHEOSG_LIB -DGRAPHICSCONTROLER_LIB -DQT_DLL -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\..\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I.\..\GraphicsControler" "-I.\..\GISExtend" "-I.\..\XMLProvider" "-I." "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I." "-I." "-I." "CipasComposerLabelWidget.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="CipasAddRemoveItemCommand.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_DLL -DGRAPHICSCONTROLER_LIB -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\GeneratedFiles" "-I.\..\include" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I." "-I." "-I." "-I." "CipasAddRemoveItemCommand.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DGEOSONTHEOSG_LIB -DGRAPHICSCONTROLER_LIB -DQT_DLL -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\..\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I.\..\GraphicsControler" "-I.\..\GISExtend" "-I.\..\XMLProvider" "-I." "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I." "-I." "-I." "CipasAddRemoveItemCommand.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <ClInclude Include="cipascolorbutton.h" />
+    <CustomBuild Include="CipasComposerShape.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_DLL -DGRAPHICSCONTROLER_LIB -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\GeneratedFiles" "-I.\..\include" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I." "-I." "-I." "-I." "CipasComposerShape.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DGEOSONTHEOSG_LIB -DGRAPHICSCONTROLER_LIB -DQT_DLL -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\..\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I.\..\GraphicsControler" "-I.\..\GISExtend" "-I.\..\XMLProvider" "-I." "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I." "-I." "-I." "CipasComposerShape.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="CipasComposerScaleBar.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_DLL -DGRAPHICSCONTROLER_LIB -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\GeneratedFiles" "-I.\..\include" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I." "-I." "-I." "-I." "CipasComposerScaleBar.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DGEOSONTHEOSG_LIB -DGRAPHICSCONTROLER_LIB -DQT_DLL -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\..\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I.\..\GraphicsControler" "-I.\..\GISExtend" "-I.\..\XMLProvider" "-I." "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I." "-I." "-I." "CipasComposerScaleBar.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <ClInclude Include="CipasComposerArrow.h" />
+    <CustomBuild Include="CipasComposerArrowWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_DLL -DGRAPHICSCONTROLER_LIB -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\GeneratedFiles" "-I.\..\include" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I." "-I." "-I." "-I." "CipasComposerArrowWidget.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DGEOSONTHEOSG_LIB -DGRAPHICSCONTROLER_LIB -DQT_DLL -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\..\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I.\..\GraphicsControler" "-I.\..\GISExtend" "-I.\..\XMLProvider" "-I." "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I." "-I." "-I." "CipasComposerArrowWidget.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="CipasComposerScaleBarWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_DLL -DGRAPHICSCONTROLER_LIB -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\GeneratedFiles" "-I.\..\include" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I." "-I." "-I." "-I." "CipasComposerScaleBarWidget.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DGEOSONTHEOSG_LIB -DGRAPHICSCONTROLER_LIB -DQT_DLL -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\..\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I.\..\GraphicsControler" "-I.\..\GISExtend" "-I.\..\XMLProvider" "-I." "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I." "-I." "-I." "CipasComposerScaleBarWidget.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="CipasComposerShapeWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_DLL -DGRAPHICSCONTROLER_LIB -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\GeneratedFiles" "-I.\..\include" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I." "-I." "-I." "-I." "CipasComposerShapeWidget.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DGEOSONTHEOSG_LIB -DGRAPHICSCONTROLER_LIB -DQT_DLL -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\..\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I.\..\GraphicsControler" "-I.\..\GISExtend" "-I.\..\XMLProvider" "-I." "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I." "-I." "-I." "CipasComposerShapeWidget.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="CipasComposerLegend.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_DLL -DGRAPHICSCONTROLER_LIB -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\GeneratedFiles" "-I.\..\include" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I." "-I." "-I." "-I." "CipasComposerLegend.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DGEOSONTHEOSG_LIB -DGRAPHICSCONTROLER_LIB -DQT_DLL -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\..\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I.\..\GraphicsControler" "-I.\..\GISExtend" "-I.\..\XMLProvider" "-I." "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I." "-I." "-I." "CipasComposerLegend.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="CipasComposerItemgroup.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_DLL -DGRAPHICSCONTROLER_LIB -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\GeneratedFiles" "-I.\..\include" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I." "-I." "-I." "-I." "CipasComposerItemgroup.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DGEOSONTHEOSG_LIB -DGRAPHICSCONTROLER_LIB -DQT_DLL -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\..\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I.\..\GraphicsControler" "-I.\..\GISExtend" "-I.\..\XMLProvider" "-I." "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I." "-I." "-I." "CipasComposerItemgroup.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="CipasComposerGLW.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_DLL -DGRAPHICSCONTROLER_LIB -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\GeneratedFiles" "-I.\..\include" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I." "-I." "-I." "-I." "CipasComposerGLW.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DGEOSONTHEOSG_LIB -DGRAPHICSCONTROLER_LIB -DQT_DLL -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\..\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I.\..\GraphicsControler" "-I.\..\GISExtend" "-I.\..\XMLProvider" "-I." "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I." "-I." "-I." "CipasComposerGLW.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="CipasComposerGLWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_DLL -DGRAPHICSCONTROLER_LIB -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\GeneratedFiles" "-I.\..\include" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I." "-I." "-I." "-I." "CipasComposerGLWidget.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DGEOSONTHEOSG_LIB -DGRAPHICSCONTROLER_LIB -DQT_DLL -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\..\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I.\..\GraphicsControler" "-I.\..\GISExtend" "-I.\..\XMLProvider" "-I." "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I." "-I." "-I." "CipasComposerGLWidget.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <ClInclude Include="CipasComposerLegendItem.h" />
+    <CustomBuild Include="CipasComposerLegendWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_DLL -DGRAPHICSCONTROLER_LIB -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\GeneratedFiles" "-I.\..\include" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I." "-I." "-I." "-I." "CipasComposerLegendWidget.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DGEOSONTHEOSG_LIB -DGRAPHICSCONTROLER_LIB -DQT_DLL -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\..\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I.\..\GraphicsControler" "-I.\..\GISExtend" "-I.\..\XMLProvider" "-I." "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I." "-I." "-I." "CipasComposerLegendWidget.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <ClInclude Include="cipascomposerlegenditemdialog.h" />
+    <CustomBuild Include="CipasComposerLegendLayersDialog.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_DLL -DGRAPHICSCONTROLER_LIB -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\GeneratedFiles" "-I.\..\include" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I." "-I." "-I." "-I." "CipasComposerLegendLayersDialog.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DGEOSONTHEOSG_LIB -DGRAPHICSCONTROLER_LIB -DQT_DLL -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\..\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I.\..\GraphicsControler" "-I.\..\GISExtend" "-I.\..\XMLProvider" "-I." "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I." "-I." "-I." "CipasComposerLegendLayersDialog.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <ClInclude Include="CipasDoubleboxscalebarstyle.h" />
+    <CustomBuild Include="CipasLegendModel.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_DLL -DGRAPHICSCONTROLER_LIB -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\GeneratedFiles" "-I.\..\include" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I." "-I." "-I." "-I." "CipasLegendModel.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DGEOSONTHEOSG_LIB -DGRAPHICSCONTROLER_LIB -DQT_DLL -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\..\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I.\..\GraphicsControler" "-I.\..\GISExtend" "-I.\..\XMLProvider" "-I." "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I." "-I." "-I." "CipasLegendModel.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="CipasExportDlg.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_DLL -DGRAPHICSCONTROLER_LIB -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\GeneratedFiles" "-I.\..\include" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I." "-I." "-I." "-I." "CipasExportDlg.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DGEOSONTHEOSG_LIB -DGRAPHICSCONTROLER_LIB -DQT_DLL -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\..\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I.\..\GraphicsControler" "-I.\..\GISExtend" "-I.\..\XMLProvider" "-I." "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I." "-I." "-I." "CipasExportDlg.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <ClInclude Include="CipasGISLegendStyle.h" />
+    <ClInclude Include="CipasGradsHorizontalLegendStyle.h" />
+    <ClInclude Include="CipasGradsVerticalLegendStyle.h" />
+    <ClInclude Include="CipasLegendStyle.h" />
+    <ClInclude Include="CipasNumericscalebarstyle.h" />
+    <ClInclude Include="CipasScaleBarStyle.h" />
+    <ClInclude Include="CipasSingleBoxScaleBarStyle.h" />
+    <ClInclude Include="CipasTemplateItemDialog.h" />
+    <ClInclude Include="CipasTemplateModel.h" />
+    <ClInclude Include="CipasTicksscalebarstyle.h" />
+    <ClInclude Include="Tempalte.h" />
+    <CustomBuild Include="ui_ciapscomposeritemwidgetbase.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="ui_ciapscomposerlegendlayersdialogbase.h" />
+    <ClInclude Include="ui_cipascomposerarrowwidgetbase.h" />
+    <ClInclude Include="ui_cipascomposerbase.h" />
+    <ClInclude Include="ui_cipascomposerlabelwidgetbase.h" />
+    <ClInclude Include="ui_cipascomposerlegenditemdialogbase.h" />
+    <ClInclude Include="ui_cipascomposerlegendlayersdialogbase.h" />
+    <ClInclude Include="ui_cipascomposerlegendwidgetbase.h" />
+    <ClInclude Include="ui_cipascomposermapwidgetbase.h" />
+    <ClInclude Include="ui_cipascomposerpicturewidgetbase.h" />
+    <ClInclude Include="ui_cipascomposerscalebarwidgetbase.h" />
+    <ClInclude Include="ui_cipascomposershapewidgetbase.h" />
+    <ClInclude Include="ui_cipascompositionwidgetbase.h" />
+    <CustomBuild Include="ComposerView.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_DLL -DGRAPHICSCONTROLER_LIB -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\GeneratedFiles" "-I.\..\include" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I." "-I." "-I." "-I." "ComposerView.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DGEOSONTHEOSG_LIB -DGRAPHICSCONTROLER_LIB -DQT_DLL -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\..\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I.\..\GraphicsControler" "-I.\..\GISExtend" "-I.\..\XMLProvider" "-I." "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I." "-I." "-I." "ComposerView.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="ComposerToolBar.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_DLL -DGRAPHICSCONTROLER_LIB -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\GeneratedFiles" "-I.\..\include" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I." "-I." "-I." "-I." "ComposerToolBar.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DGEOSONTHEOSG_LIB -DGRAPHICSCONTROLER_LIB -DQT_DLL -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\..\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I.\..\GraphicsControler" "-I.\..\GISExtend" "-I.\..\XMLProvider" "-I." "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I." "-I." "-I." "ComposerToolBar.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="ComposerItem.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_DLL -DGRAPHICSCONTROLER_LIB -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\GeneratedFiles" "-I.\..\include" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I." "-I." "-I." "-I." "ComposerItem.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DGEOSONTHEOSG_LIB -DGRAPHICSCONTROLER_LIB -DQT_DLL -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\..\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I.\..\GraphicsControler" "-I.\..\GISExtend" "-I.\..\XMLProvider" "-I." "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I." "-I." "-I." "ComposerItem.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <ClInclude Include="CipasComposerItemCommand.h" />
+    <CustomBuild Include="CipasComposition.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_DLL -DGRAPHICSCONTROLER_LIB -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\GeneratedFiles" "-I.\..\include" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I." "-I." "-I." "-I." "CipasComposition.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DGEOSONTHEOSG_LIB -DGRAPHICSCONTROLER_LIB -DQT_DLL -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\..\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I.\..\GraphicsControler" "-I.\..\GISExtend" "-I.\..\XMLProvider" "-I." "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I." "-I." "-I." "CipasComposition.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <ClInclude Include="CipasComposerLabel.h" />
+    <CustomBuild Include="CipasComposerMap.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_DLL -DGRAPHICSCONTROLER_LIB -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\GeneratedFiles" "-I.\..\include" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I." "-I." "-I." "-I." "CipasComposerMap.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DGEOSONTHEOSG_LIB -DGRAPHICSCONTROLER_LIB -DQT_DLL -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\..\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I.\..\GraphicsControler" "-I.\..\GISExtend" "-I.\..\XMLProvider" "-I." "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I." "-I." "-I." "CipasComposerMap.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="CipasComposerPicture.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_DLL -DGRAPHICSCONTROLER_LIB -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\GeneratedFiles" "-I.\..\include" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I." "-I." "-I." "-I." "CipasComposerPicture.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DGEOSONTHEOSG_LIB -DGRAPHICSCONTROLER_LIB -DQT_DLL -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\..\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I.\..\GraphicsControler" "-I.\..\GISExtend" "-I.\..\XMLProvider" "-I." "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I." "-I." "-I." "CipasComposerPicture.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <ClInclude Include="Cipasitemcommand.h" />
+    <CustomBuild Include="CipasMapRenderer.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_DLL -DGRAPHICSCONTROLER_LIB -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\GeneratedFiles" "-I.\..\include" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I." "-I." "-I." "-I." "CipasMapRenderer.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_SVG_LIB -DGEOSONTHEOSG_LIB -DGRAPHICSCONTROLER_LIB -DQT_DLL -D_WINDLL  "-I." "-I.\..\GeosOnTheOsg" "-I.\..\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtSvg" "-I." "-I.\..\GraphicsControler" "-I.\..\GISExtend" "-I.\..\XMLProvider" "-I." "-I$(OSG_EARTH_INCLUDE)\." "-I$(OSG_INCLUDE)\." "-I$(PROJ4_INCLUDE)\." "-I$(GEOS_INCLUDE)\." "-I$(BOOST_INCLUDE)\." "-I$(GEOS_HOME)\include" "-I$(GEOS_HOME)\capi" "-I$(GDAL_HOME)\include" "-I." "-I." "-I." "CipasMapRenderer.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <ClInclude Include="CipasMapToPixel.h" />
+    <ClInclude Include="CipasPaperItem.h" />
+    <ClInclude Include="CipasPoint.h" />
+    <ClInclude Include="CipasRectangle.h" />
+    <ClInclude Include="CipasRenderContext.h" />
+    <ClInclude Include="tmui_global.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CipasAddRemoveItemCommand.cpp" />
+    <ClCompile Include="cipascolorbutton.cpp" />
+    <ClCompile Include="CipasComposer.cpp" />
+    <ClCompile Include="CipasComposerArrow.cpp" />
+    <ClCompile Include="CipasComposerArrowWidget.cpp" />
+    <ClCompile Include="CipasComposerGLW.cpp" />
+    <ClCompile Include="CipasComposerGLWidget.cpp" />
+    <ClCompile Include="CipasComposerItemCommand.cpp" />
+    <ClCompile Include="CipasComposeritemgroup.cpp" />
+    <ClCompile Include="CipasComposerItemWidget.cpp" />
+    <ClCompile Include="CipasComposerLabel.cpp" />
+    <ClCompile Include="CipasComposerLabelWidget.cpp" />
+    <ClCompile Include="CipasComposerLegend.cpp" />
+    <ClCompile Include="CipasComposerLegendItem.cpp" />
+    <ClCompile Include="cipascomposerlegenditemdialog.cpp" />
+    <ClCompile Include="CipasComposerLegendLayersDialog.cpp" />
+    <ClCompile Include="CipasComposerLegendWidget.cpp" />
+    <ClCompile Include="CipasComposerMap.cpp" />
+    <ClCompile Include="CipasComposerPicture.cpp" />
+    <ClCompile Include="CipasComposerPictureWidget.cpp" />
+    <ClCompile Include="CipasComposerScaleBar.cpp" />
+    <ClCompile Include="CipasComposerScaleBarWidget.cpp" />
+    <ClCompile Include="CipasComposerShape.cpp" />
+    <ClCompile Include="CipasComposerShapeWidget.cpp" />
+    <ClCompile Include="CipasComposerView.cpp" />
+    <ClCompile Include="CipasComposition.cpp" />
+    <ClCompile Include="CipasCompositionWidget.cpp" />
+    <ClCompile Include="CipasDoubleboxscalebarstyle.cpp" />
+    <ClCompile Include="CipasExportDlg.cpp" />
+    <ClCompile Include="CipasGISLegendStyle.cpp" />
+    <ClCompile Include="CipasGradsHorizontalLegendStyle.cpp" />
+    <ClCompile Include="CipasGradsVerticalLegendStyle.cpp" />
+    <ClCompile Include="Cipasitemcommand.cpp" />
+    <ClCompile Include="CipasLegendModel.cpp" />
+    <ClCompile Include="CipasLegendStyle.cpp" />
+    <ClCompile Include="CipasMapRenderer.cpp" />
+    <ClCompile Include="CipasMapToPixel.cpp" />
+    <ClCompile Include="CipasNumericscalebarstyle.cpp" />
+    <ClCompile Include="CipasPaperItem.cpp" />
+    <ClCompile Include="CipasPoint.cpp" />
+    <ClCompile Include="CipasRectangle.cpp" />
+    <ClCompile Include="CipasRenderContext.cpp" />
+    <ClCompile Include="CipasScaleBarStyle.cpp" />
+    <ClCompile Include="CipasSingleBoxScaleBarStyle.cpp" />
+    <ClCompile Include="CipasTemplateItemDialog.cpp" />
+    <ClCompile Include="CipasTemplateModel.cpp" />
+    <ClCompile Include="CipasTemplateTree.cpp" />
+    <ClCompile Include="CipasTicksscalebarstyle.cpp" />
+    <ClCompile Include="ComposerItem.cpp" />
+    <ClCompile Include="ComposerToolBar.cpp" />
+    <ClCompile Include="ComposerView.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_CipasAddRemoveItemCommand.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_CipasComposer.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_CipasComposerArrowWidget.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_CipasComposerGLW.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_CipasComposerGLWidget.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_CipasComposerItemgroup.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_CipasComposerItemWidget.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_CipasComposerLabelWidget.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_CipasComposerLegend.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_CipasComposerLegendLayersDialog.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_CipasComposerLegendWidget.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_CipasComposerMap.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_CipasComposerPicture.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_CipasComposerPictureWidget.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_CipasComposerScaleBar.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_CipasComposerScaleBarWidget.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_CipasComposerShape.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_CipasComposerShapeWidget.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_CipasComposerView.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_CipasComposition.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_CipasCompositionWidget.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_CipasExportDlg.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_CipasLegendModel.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_CipasMapRenderer.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_CipasTemplateTree.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_ComposerItem.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_ComposerToolBar.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_ComposerView.cpp" />
+    <ClCompile Include="GeneratedFiles\qrc_tmui.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CipasAddRemoveItemCommand.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CipasComposer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CipasComposerArrowWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CipasComposerGLW.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CipasComposerGLWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CipasComposerItemgroup.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CipasComposerItemWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CipasComposerLabelWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CipasComposerLegend.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CipasComposerLegendLayersDialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CipasComposerLegendWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CipasComposerMap.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CipasComposerPicture.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CipasComposerPictureWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CipasComposerScaleBar.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CipasComposerScaleBarWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CipasComposerShape.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CipasComposerShapeWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CipasComposerView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CipasComposition.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CipasCompositionWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CipasExportDlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CipasLegendModel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CipasMapRenderer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CipasTemplateTree.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ComposerItem.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ComposerToolBar.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ComposerView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="tmui.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(FullPath);.\themes\default\cap_flat.png;.\themes\default\cap_round.png;.\themes\default\cap_square.png;.\themes\default\clearInput.png;.\themes\default\extents.png;.\themes\default\favourites.png;.\themes\default\geographic.png;.\themes\default\gpsicons\barchart.svg;.\themes\default\gpsicons\polarchart.svg;.\themes\default\grass_location.png;.\themes\default\grass_mapset.png;.\themes\default\join_bevel.png;.\themes\default\join_miter.png;.\themes\default\join_round.png;.\themes\default\join_style.svg;.\themes\default\mActionAddAllToOverview.png;.\themes\default\mActionAddArrow.png;.\themes\default\mActionAddBasicShape.png;.\themes\default\mActionAddImage.png;.\themes\default\mActionAddPart.png;.\themes\default\mActionAddLayer.png;.\themes\default\mActionAddLegend.png;.\themes\default\mActionAddMap.png;.\themes\default\mActionAddNonDbLayer.png;.\themes\default\mActionAddOgrLayer.png;.\themes\default\mActionAddRasterLayer.png;.\themes\default\mActionAddRing.png;.\themes\default\mActionAddSpatiaLiteLayer.png;.\themes\default\mActionAddVertex.png;.\themes\default\mActionAddWmsLayer.png;.\themes\default\mActionAlignBottom.png;.\themes\default\mActionAlignHCenter.png;.\themes\default\mActionAlignLeft.png;.\themes\default\mActionAlignRight.png;.\themes\default\mActionAlignTop.png;.\themes\default\mActionAlignVCenter.png;.\themes\default\mActionAnnotation.png;.\themes\default\mActionArrowDown.png;.\themes\default\mActionArrowUp.png;.\themes\default\mActionCalculateField.png;.\themes\default\mActionCaptureLine.png;.\themes\default\mActionCapturePoint.png;.\themes\default\mActionCapturePolygon.png;.\themes\default\mActionChangeLabelProperties.png;.\themes\default\mActionCheckQgisVersion.png;.\themes\default\mActionCollapseTree.png;.\themes\default\mActionComposerManager.png;.\themes\default\mActionContextHelp.png;.\themes\default\mActionCopySelected.png;.\themes\default\mActionCustomProjection.png;.\themes\default\mActionDeleteAttribute.png;.\themes\default\mActionDeletePart.png;.\themes\default\mActionDeleteRing.png;.\themes\default\mActionDeleteSelected.png;.\themes\default\mActionDeleteVertex.png;.\themes\default\mActionDeselectAll.png;.\themes\default\mActionDraw.png;.\themes\default\mActionEditCopy.png;.\themes\default\mActionEditCut.png;.\themes\default\mActionEditPaste.png;.\themes\default\mActionExpandTree.png;.\themes\default\mActionExportMapServer.png;.\themes\default\mActionFileExit.png;.\themes\default\mActionFileNew.png;.\themes\default\mActionFileOpen.png;.\themes\default\mActionFilePrint.png;.\themes\default\mActionFileSaveAs.png;.\themes\default\mActionFileSave.png;.\themes\default\mActionFileSmall.png;.\themes\default\mActionFolder.png;.\themes\default\mActionFormAnnotation.png;.\themes\default\mActionFromSelectedFeature.png;.\themes\default\mActionFullHistogramStretch.png;.\themes\default\mActionGroupItems.png;.\themes\default\mActionHelpAbout.png;.\themes\default\mActionHelpAPI.png;.\themes\default\mActionHelpContents.png;.\themes\default\mActionHelpSponsors.png;.\themes\default\mActionHideAllLayers.png;.\themes\default\mActionIdentify.png;.\themes\default\mActionInOverview.png;.\themes\default\mActionInvertSelection.png;.\themes\default\mActionLabeling.png;.\themes\default\mActionLabel.png;.\themes\default\mActionLocalHistogramStretch.png;.\themes\default\mActionLowerItems.png;.\themes\default\mActionMapTips.png;.\themes\default\mActionMeasureAngle.png;.\themes\default\mActionMeasureArea.png;.\themes\default\mActionMeasure.png;.\themes\default\mActionMergeFeatureAttributes.png;.\themes\default\mActionMergeFeatures.png;.\themes\default\mActionMoveFeature.png;.\themes\default\mActionMoveItemContent.png;.\themes\default\mActionMoveItemsToBottom.png;.\themes\default\mActionMoveItemsToTop.png;.\themes\default\mActionMoveLabel.png;.\themes\default\mActionMoveVertex.png;.\themes\default\mActionNewAttribute.png;.\themes\default\mActionNewBookmark.png;.\themes\default\mActionNewComposer.png;.\themes\default\mActionNewFolder.png;.\themes\default\mActionNewVectorLayer.png;.\themes\default\mActionNodeTool.png;.\themes\default\mActionOffsetCurve.png;.\themes\default\mActionOpenTable.png;.\themes\default\mActionOptions.png;.\themes\default\mActionPan.png;.\themes\default\mActionPanToSelected.png;.\themes\default\mActionShowRasterCalculator.png;.\themes\default\mAction.png;.\themes\default\mActionProjectProperties.png;.\themes\default\mActionPropertyItem.png;.\themes\default\mActionQgisHomePage.png;.\themes\default\mActionRaiseItems.png;.\themes\default\mActionRedo.png;.\themes\default\mActionRemoveAllFromOverview.png;.\themes\default\mActionRemoveLayer.png;.\themes\default\mActionRemove.png;.\themes\default\mActionRemoveSelectedFeature.png;.\themes\default\mActionReshape.png;.\themes\default\mActionRotateLabel.png;.\themes\default\mActionRotatePointSymbols.png;.\themes\default\mActionSaveAsPDF.png;.\themes\default\mActionSaveAsSVG.png;.\themes\default\mActionSaveEdits.png;.\themes\default\mActionSaveMapAsImage.png;.\themes\default\mActionScaleBar.png;.\themes\default\mActionSelectedToTop.png;.\themes\default\mActionSelectFreehand.png;.\themes\default\mActionSelectPan.png;.\themes\default\mActionSelect.png;.\themes\default\mActionSelectPolygon.png;.\themes\default\mActionSelectRadius.png;.\themes\default\mActionSelectRectangle.png;.\themes\default\mActionShowAllLayers.png;.\themes\default\mActionShowBookmarks.png;.\themes\default\mActionShowPluginManager.png;.\themes\default\mActionSimplify.png;.\themes\default\mActionSplitFeatures.png;.\themes\default\mActionTextAnnotation.png;.\themes\default\mActionToggleEditing.png;.\themes\default\mActionUndo.png;.\themes\default\mActionUngroupItems.png;.\themes\default\mActionUnselectAttributes.png;.\themes\default\mActionZoomActual.png;.\themes\default\mActionZoomFullExtent.png;.\themes\default\mActionZoomIn.png;.\themes\default\mActionZoomLast.png;.\themes\default\mActionZoomNext.png;.\themes\default\mActionZoomOut.png;.\themes\default\mActionZoomToLayer.png;.\themes\default\mActionZoomToSelected.png;.\themes\default\mIconConnect.png;.\themes\default\mIconDbSchema.png;.\themes\default\mIconDelete.png;.\themes\default\mIconEditable.png;.\themes\default\mIconFavourites.png;.\themes\default\mIconFirst.png;.\themes\default\mIconGeometryLayer.png;.\themes\default\mIconLast.png;.\themes\default\mIconLayer.png;.\themes\default\mIconLineLayer.png;.\themes\default\mIconLock.png;.\themes\default\mIconNew.png;.\themes\default\mIconMssql.png;.\themes\default\mIconNext.png;.\themes\default\mIconNoPyramid.png;.\themes\default\mIconPointLayer.png;.\themes\default\mIconPolygonLayer.png;.\themes\default\mIconPostgis.png;.\themes\default\mIconPrevious.png;.\themes\default\mIconProjectionDisabled.png;.\themes\default\mIconProjectionEnabled.png;.\themes\default\mIconProjectionProblem.png;.\themes\default\mIconProperties.png;.\themes\default\mIconPyramid.png;.\themes\default\mIconSpatialite.png;.\themes\default\mIconStopRendering.png;.\themes\default\mIconRaster.png;.\themes\default\mIconRenderingEnabled.png;.\themes\default\mIconRenderingDisabled.png;.\themes\default\mIconSymbology.png;.\themes\default\mIconTableLayer.png;.\themes\default\mIconUnknownLayerType.png;.\themes\default\mIconWaitingForLayerType.png;.\themes\default\mIconWfs.png;.\themes\default\mIconWms.png;.\themes\default\mIconWmsLayer.png;.\themes\default\mIconWarn.png;.\themes\default\mIconZip.png;.\themes\default\mMapserverExport.png;.\themes\default\plugin.png;.\themes\default\propertyicons\action.png;.\themes\default\propertyicons\attributes.png;.\themes\default\propertyicons\colormap.png;.\themes\default\propertyicons\CRS.png;.\themes\default\propertyicons\diagram.png;.\themes\default\propertyicons\digitising.png;.\themes\default\propertyicons\general.png;.\themes\default\propertyicons\histogram.png;.\themes\default\propertyicons\join.png;.\themes\default\propertyicons\labels.png;.\themes\default\propertyicons\locale.png;.\themes\default\propertyicons\map_tools.png;.\themes\default\propertyicons\metadata.png;.\themes\default\propertyicons\network_and_proxy.png;.\themes\default\propertyicons\overlay.png;.\themes\default\propertyicons\pyramids.png;.\themes\default\propertyicons\rendering.png;.\themes\default\propertyicons\symbology.png;.\themes\default\propertyicons\transparency.png;.\themes\default\propertyicons\gdal.png;.\themes\default\qgis.xpm;.\themes\default\rendererCategorizedSymbol.png;.\themes\default\rendererGraduatedSymbol.png;.\themes\default\rendererSingleSymbol.png;.\themes\default\styleicons\color.png;.\themes\default\styleicons\style-line.png;.\themes\default\styleicons\style-point.png;.\themes\default\styleicons\style-polygon.png;.\themes\default\symbologyAdd.png;.\themes\default\symbologyDown.png;.\themes\default\symbologyEdit.png;.\themes\default\symbologyRemove.png;.\themes\default\symbologyUp.png;.\themes\default\tracking.png;.\themes\default\transformed.png;.\themes\default\user.png;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(FullPath);.\themes\default\cap_flat.png;.\themes\default\cap_round.png;.\themes\default\cap_square.png;.\themes\default\clearInput.png;.\themes\default\extents.png;.\themes\default\favourites.png;.\themes\default\geographic.png;.\themes\default\gpsicons\barchart.svg;.\themes\default\gpsicons\polarchart.svg;.\themes\default\grass_location.png;.\themes\default\grass_mapset.png;.\themes\default\join_bevel.png;.\themes\default\join_miter.png;.\themes\default\join_round.png;.\themes\default\join_style.svg;.\themes\default\mActionAddAllToOverview.png;.\themes\default\mActionAddArrow.png;.\themes\default\mActionAddBasicShape.png;.\themes\default\mActionAddImage.png;.\themes\default\mActionAddPart.png;.\themes\default\mActionAddLayer.png;.\themes\default\mActionAddLegend.png;.\themes\default\mActionAddMap.png;.\themes\default\mActionAddNonDbLayer.png;.\themes\default\mActionAddOgrLayer.png;.\themes\default\mActionAddRasterLayer.png;.\themes\default\mActionAddRing.png;.\themes\default\mActionAddSpatiaLiteLayer.png;.\themes\default\mActionAddVertex.png;.\themes\default\mActionAddWmsLayer.png;.\themes\default\mActionAlignBottom.png;.\themes\default\mActionAlignHCenter.png;.\themes\default\mActionAlignLeft.png;.\themes\default\mActionAlignRight.png;.\themes\default\mActionAlignTop.png;.\themes\default\mActionAlignVCenter.png;.\themes\default\mActionAnnotation.png;.\themes\default\mActionArrowDown.png;.\themes\default\mActionArrowUp.png;.\themes\default\mActionCalculateField.png;.\themes\default\mActionCaptureLine.png;.\themes\default\mActionCapturePoint.png;.\themes\default\mActionCapturePolygon.png;.\themes\default\mActionChangeLabelProperties.png;.\themes\default\mActionCheckQgisVersion.png;.\themes\default\mActionCollapseTree.png;.\themes\default\mActionComposerManager.png;.\themes\default\mActionContextHelp.png;.\themes\default\mActionCopySelected.png;.\themes\default\mActionCustomProjection.png;.\themes\default\mActionDeleteAttribute.png;.\themes\default\mActionDeletePart.png;.\themes\default\mActionDeleteRing.png;.\themes\default\mActionDeleteSelected.png;.\themes\default\mActionDeleteVertex.png;.\themes\default\mActionDeselectAll.png;.\themes\default\mActionDraw.png;.\themes\default\mActionEditCopy.png;.\themes\default\mActionEditCut.png;.\themes\default\mActionEditPaste.png;.\themes\default\mActionExpandTree.png;.\themes\default\mActionExportMapServer.png;.\themes\default\mActionFileExit.png;.\themes\default\mActionFileNew.png;.\themes\default\mActionFileOpen.png;.\themes\default\mActionFilePrint.png;.\themes\default\mActionFileSaveAs.png;.\themes\default\mActionFileSave.png;.\themes\default\mActionFileSmall.png;.\themes\default\mActionFolder.png;.\themes\default\mActionFormAnnotation.png;.\themes\default\mActionFromSelectedFeature.png;.\themes\default\mActionFullHistogramStretch.png;.\themes\default\mActionGroupItems.png;.\themes\default\mActionHelpAbout.png;.\themes\default\mActionHelpAPI.png;.\themes\default\mActionHelpContents.png;.\themes\default\mActionHelpSponsors.png;.\themes\default\mActionHideAllLayers.png;.\themes\default\mActionIdentify.png;.\themes\default\mActionInOverview.png;.\themes\default\mActionInvertSelection.png;.\themes\default\mActionLabeling.png;.\themes\default\mActionLabel.png;.\themes\default\mActionLocalHistogramStretch.png;.\themes\default\mActionLowerItems.png;.\themes\default\mActionMapTips.png;.\themes\default\mActionMeasureAngle.png;.\themes\default\mActionMeasureArea.png;.\themes\default\mActionMeasure.png;.\themes\default\mActionMergeFeatureAttributes.png;.\themes\default\mActionMergeFeatures.png;.\themes\default\mActionMoveFeature.png;.\themes\default\mActionMoveItemContent.png;.\themes\default\mActionMoveItemsToBottom.png;.\themes\default\mActionMoveItemsToTop.png;.\themes\default\mActionMoveLabel.png;.\themes\default\mActionMoveVertex.png;.\themes\default\mActionNewAttribute.png;.\themes\default\mActionNewBookmark.png;.\themes\default\mActionNewComposer.png;.\themes\default\mActionNewFolder.png;.\themes\default\mActionNewVectorLayer.png;.\themes\default\mActionNodeTool.png;.\themes\default\mActionOffsetCurve.png;.\themes\default\mActionOpenTable.png;.\themes\default\mActionOptions.png;.\themes\default\mActionPan.png;.\themes\default\mActionPanToSelected.png;.\themes\default\mActionShowRasterCalculator.png;.\themes\default\mAction.png;.\themes\default\mActionProjectProperties.png;.\themes\default\mActionPropertyItem.png;.\themes\default\mActionQgisHomePage.png;.\themes\default\mActionRaiseItems.png;.\themes\default\mActionRedo.png;.\themes\default\mActionRemoveAllFromOverview.png;.\themes\default\mActionRemoveLayer.png;.\themes\default\mActionRemove.png;.\themes\default\mActionRemoveSelectedFeature.png;.\themes\default\mActionReshape.png;.\themes\default\mActionRotateLabel.png;.\themes\default\mActionRotatePointSymbols.png;.\themes\default\mActionSaveAsPDF.png;.\themes\default\mActionSaveAsSVG.png;.\themes\default\mActionSaveEdits.png;.\themes\default\mActionSaveMapAsImage.png;.\themes\default\mActionScaleBar.png;.\themes\default\mActionSelectedToTop.png;.\themes\default\mActionSelectFreehand.png;.\themes\default\mActionSelectPan.png;.\themes\default\mActionSelect.png;.\themes\default\mActionSelectPolygon.png;.\themes\default\mActionSelectRadius.png;.\themes\default\mActionSelectRectangle.png;.\themes\default\mActionShowAllLayers.png;.\themes\default\mActionShowBookmarks.png;.\themes\default\mActionShowPluginManager.png;.\themes\default\mActionSimplify.png;.\themes\default\mActionSplitFeatures.png;.\themes\default\mActionTextAnnotation.png;.\themes\default\mActionToggleEditing.png;.\themes\default\mActionUndo.png;.\themes\default\mActionUngroupItems.png;.\themes\default\mActionUnselectAttributes.png;.\themes\default\mActionZoomActual.png;.\themes\default\mActionZoomFullExtent.png;.\themes\default\mActionZoomIn.png;.\themes\default\mActionZoomLast.png;.\themes\default\mActionZoomNext.png;.\themes\default\mActionZoomOut.png;.\themes\default\mActionZoomToLayer.png;.\themes\default\mActionZoomToSelected.png;.\themes\default\mIconConnect.png;.\themes\default\mIconDbSchema.png;.\themes\default\mIconDelete.png;.\themes\default\mIconEditable.png;.\themes\default\mIconFavourites.png;.\themes\default\mIconFirst.png;.\themes\default\mIconGeometryLayer.png;.\themes\default\mIconLast.png;.\themes\default\mIconLayer.png;.\themes\default\mIconLineLayer.png;.\themes\default\mIconLock.png;.\themes\default\mIconNew.png;.\themes\default\mIconMssql.png;.\themes\default\mIconNext.png;.\themes\default\mIconNoPyramid.png;.\themes\default\mIconPointLayer.png;.\themes\default\mIconPolygonLayer.png;.\themes\default\mIconPostgis.png;.\themes\default\mIconPrevious.png;.\themes\default\mIconProjectionDisabled.png;.\themes\default\mIconProjectionEnabled.png;.\themes\default\mIconProjectionProblem.png;.\themes\default\mIconProperties.png;.\themes\default\mIconPyramid.png;.\themes\default\mIconSpatialite.png;.\themes\default\mIconStopRendering.png;.\themes\default\mIconRaster.png;.\themes\default\mIconRenderingEnabled.png;.\themes\default\mIconRenderingDisabled.png;.\themes\default\mIconSymbology.png;.\themes\default\mIconTableLayer.png;.\themes\default\mIconUnknownLayerType.png;.\themes\default\mIconWaitingForLayerType.png;.\themes\default\mIconWfs.png;.\themes\default\mIconWms.png;.\themes\default\mIconWmsLayer.png;.\themes\default\mIconWarn.png;.\themes\default\mIconZip.png;.\themes\default\mMapserverExport.png;.\themes\default\plugin.png;.\themes\default\propertyicons\action.png;.\themes\default\propertyicons\attributes.png;.\themes\default\propertyicons\colormap.png;.\themes\default\propertyicons\CRS.png;.\themes\default\propertyicons\diagram.png;.\themes\default\propertyicons\digitising.png;.\themes\default\propertyicons\general.png;.\themes\default\propertyicons\histogram.png;.\themes\default\propertyicons\join.png;.\themes\default\propertyicons\labels.png;.\themes\default\propertyicons\locale.png;.\themes\default\propertyicons\map_tools.png;.\themes\default\propertyicons\metadata.png;.\themes\default\propertyicons\network_and_proxy.png;.\themes\default\propertyicons\overlay.png;.\themes\default\propertyicons\pyramids.png;.\themes\default\propertyicons\rendering.png;.\themes\default\propertyicons\symbology.png;.\themes\default\propertyicons\transparency.png;.\themes\default\propertyicons\gdal.png;.\themes\default\qgis.xpm;.\themes\default\rendererCategorizedSymbol.png;.\themes\default\rendererGraduatedSymbol.png;.\themes\default\rendererSingleSymbol.png;.\themes\default\styleicons\color.png;.\themes\default\styleicons\style-line.png;.\themes\default\styleicons\style-point.png;.\themes\default\styleicons\style-polygon.png;.\themes\default\symbologyAdd.png;.\themes\default\symbologyDown.png;.\themes\default\symbologyEdit.png;.\themes\default\symbologyRemove.png;.\themes\default\symbologyUp.png;.\themes\default\tracking.png;.\themes\default\transformed.png;.\themes\default\user.png;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <SubType>Designer</SubType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties UicDir=".\GeneratedFiles" MocDir=".\GeneratedFiles\$(ConfigurationName)" MocOptions="" RccDir=".\GeneratedFiles" lupdateOnBuild="0" lupdateOptions="" lreleaseOptions="" QtVersion_x0020_Win32="qt4.8.5" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

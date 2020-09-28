@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DataDockWidget</class>
+ <widget class="QDockWidget" name="DataDockWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>568</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>300</width>
+    <height>310</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>基数据窗口</string>
+  </property>
+  <widget class="QWidget" name="widget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <property name="margin">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="SingleTab">
+         <attribute name="title">
+          <string>单站产品</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <property name="margin">
+           <number>3</number>
+          </property>
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_3">
+            <item row="5" column="1" colspan="3">
+             <widget class="QLineEdit" name="editSavePath">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="1" colspan="3">
+             <widget class="QLineEdit" name="editBrowserPath">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>雷达站点：</string>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="0">
+             <widget class="QPushButton" name="btnBrowser">
+              <property name="text">
+               <string>文件路径</string>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="0" colspan="4">
+             <widget class="QListView" name="listView">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="0">
+             <widget class="QPushButton" name="btnSave">
+              <property name="text">
+               <string>生成路径</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="label_3">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>是否质控：</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_6">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>产品类型：</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1" colspan="3">
+             <widget class="QComboBox" name="RoseArithmsBox">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <item>
+               <property name="text">
+                <string>Arith_251_R</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Arith_252_QR</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Arith_254_V</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Arith_255_QV</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Arith_256_W</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Arith_257_QW</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Arith_258_CAP</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Arith_262_HBR_270_QPR</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Arith_263_CR</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Arith_264_CRH</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Arith_265_ET</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Arith_266_VIL</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Arith_267_VILD</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Arith_271_OHP</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Arith_273_THP</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Arith_274_SHP</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Arith_277_SCI</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Arith_285_EVP_269_VWP_268_VAD</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Arith_291_HI</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Arith_292_M</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="3" column="1" colspan="3">
+             <widget class="QRadioButton" name="SelQcRadioBtn">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>质量控制</string>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="3">
+             <widget class="QPushButton" name="GenerateButton">
+              <property name="text">
+               <string>生成</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1" colspan="3">
+             <widget class="QComboBox" name="RadSiteNameComBox">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="editable">
+               <bool>true</bool>
+              </property>
+              <item>
+               <property name="text">
+                <string>Z9431</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Z9436</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Z9439</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Z9591</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="MosaicTab">
+         <attribute name="title">
+          <string>组网产品</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_6">
+          <property name="margin">
+           <number>3</number>
+          </property>
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_5">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_4">
+              <property name="text">
+               <string>产品名称：</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_5">
+              <property name="text">
+               <string>选择日期：</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QCheckBox" name="chb_day_m">
+              <property name="text">
+               <string>日</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QComboBox" name="cmb_day_m">
+              <item>
+               <property name="text">
+                <string>1天以内</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2天以内</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>3天以内</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="QCheckBox" name="chb_hour_m">
+              <property name="text">
+               <string>时</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="3">
+             <widget class="QComboBox" name="cmb_hour_m"/>
+            </item>
+            <item row="3" column="0" colspan="4">
+             <widget class="QTableWidget" name="tableWidget_m">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <column>
+               <property name="text">
+                <string>日期</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>时间</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+            <item row="0" column="1" colspan="3">
+             <widget class="QComboBox" name="cmbName_m"/>
+            </item>
+            <item row="1" column="1" colspan="3">
+             <widget class="QDateTimeEdit" name="dateTimeEdit_m">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

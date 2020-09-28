@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WinToolBar</class>
+ <widget class="QToolBar" name="WinToolBar">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>665</width>
+    <height>89</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>WinToolBar</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>20</width>
+    <height>20</height>
+   </size>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextUnderIcon</enum>
+  </property>
+  <action name="actionCascad">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/winToolBar/cascad.png</normaloff>:/images/winToolBar/cascad.png</iconset>
+   </property>
+   <property name="text">
+    <string>层叠</string>
+   </property>
+   <property name="toolTip">
+    <string>窗口层叠</string>
+   </property>
+  </action>
+  <action name="actionTile">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/winToolBar/tile.png</normaloff>:/images/winToolBar/tile.png</iconset>
+   </property>
+   <property name="text">
+    <string>平铺</string>
+   </property>
+   <property name="toolTip">
+    <string>窗口平铺</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/winToolBar/close.png</normaloff>:/images/winToolBar/close.png</iconset>
+   </property>
+   <property name="text">
+    <string>关闭</string>
+   </property>
+   <property name="toolTip">
+    <string>关闭窗口</string>
+   </property>
+  </action>
+  <action name="actionCloseAll">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/winToolBar/closeAll.png</normaloff>:/images/winToolBar/closeAll.png</iconset>
+   </property>
+   <property name="text">
+    <string>关闭所有</string>
+   </property>
+   <property name="toolTip">
+    <string>关闭所有</string>
+   </property>
+  </action>
+  <action name="actionFullScreen">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/winToolBar/fullscreen.png</normaloff>:/images/winToolBar/fullscreen.png</iconset>
+   </property>
+   <property name="text">
+    <string>全屏</string>
+   </property>
+   <property name="toolTip">
+    <string>全屏</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+Return</string>
+   </property>
+  </action>
+  <addaction name="actionFullScreen"/>
+  <addaction name="actionCascad"/>
+  <addaction name="actionTile"/>
+  <addaction name="actionClose"/>
+  <addaction name="actionCloseAll"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="mainwindow.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LocalDebuggerWorkingDirectory>$(OutDir)</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments>-src "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs" -dst "+proj=eqc +lat_ts=0 +lat_0=-3 +lon_0=180 +x_0=0 +y_0=0 +a=6378140 +b=6356755.288157528 +units=m +no_defs" -ctl E:\ProjectData\ET_201306040000.ctl -grd E:\ProjectData\ET_201306040000.grd -back 1 -bc 255 255 255 255 -size 0 0 800 600 -out D:\123.png</LocalDebuggerCommandArguments>
+  </PropertyGroup>
+</Project>

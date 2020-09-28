@@ -1,0 +1,54 @@
+<RCC>
+  <qresource prefix="/">
+    <file>images/thematicMap/mComposer.png</file>
+    <file>images/thematicMap/mActionFileOpen.png</file>
+    <file>images/thematicMap/mActionFileExit.png</file>
+    <file>images/thematicMap/mActionSaveAsPDF.png</file>
+    <file>images/thematicMap/mActionExportAsEPS.png</file>
+    <file>images/thematicMap/mActionSaveAsSVG.png</file>
+    <file>images/thematicMap/mActionAddLegend.png</file>
+    <file>images/thematicMap/mActionUndo.png</file>
+    <file>images/thematicMap/mActionRedo.png</file>
+    <file>images/thematicMap/mActionFilePrint.png</file>
+    <file>images/thematicMap/mActionZoomFullExtent.png</file>
+    <file>images/thematicMap/mActionRefreshView.png</file>
+    <file>images/thematicMap/mActionAddImage.png</file>
+    <file>images/thematicMap/mActionAddMap.png</file>
+    <file>images/thematicMap/mActionLabel.png</file>
+    <file>images/thematicMap/mActionScaleBar.png</file>
+    <file>images/thematicMap/mActionAddBasicShape.png</file>
+    <file>images/thematicMap/mActionSelectMoveItem.png</file>
+    <file>images/thematicMap/mActionPan.png</file>
+    <file>images/thematicMap/mActionGroupItems.png</file>
+    <file>images/thematicMap/mActionUngroupItems.png</file>
+    <file>images/thematicMap/mActionRaiseItems.png</file>
+    <file>images/thematicMap/mActionLowerItems.png</file>
+    <file>images/thematicMap/mActionMoveItemsToTop.png</file>
+    <file>images/thematicMap/mActionMoveItemsToBottom.png</file>
+    <file>images/thematicMap/mActionAlignLeft.png</file>
+    <file>images/thematicMap/mActionAlignHCenter.png</file>
+    <file>images/thematicMap/mActionAlignRight.png</file>
+    <file>images/thematicMap/mActionAlignTop.png</file>
+    <file>images/thematicMap/mActionAlignVCenter.png</file>
+    <file>images/thematicMap/mActionAlignBottom.png</file>
+    <file>images/thematicMap/symbologyUp.png</file>
+    <file>images/thematicMap/symbologyDown.png</file>
+    <file>images/thematicMap/symbologyAdd.png</file>
+    <file>images/thematicMap/symbologyRemove.png</file>
+    <file>images/thematicMap/symbologyEdit.png</file>
+    <file>images/thematicMap/mActionPageZoomFullExtent.png</file>
+    <file>images/thematicMap/mActionPageZoomIn.png</file>
+    <file>images/thematicMap/mActionPageZoomOut.png</file>
+    <file>images/thematicMap/mActionAddArrow.png</file>
+    <file>images/thematicMap/mActionZoomIn.png</file>
+    <file>images/thematicMap/mActionZoomOut.png</file>
+    <file>images/thematicMap/copy.png</file>
+    <file>images/thematicMap/down.png</file>
+    <file>images/thematicMap/magnifier.png</file>
+    <file>images/thematicMap/mercator.png</file>
+    <file>images/thematicMap/open.png</file>
+    <file>images/thematicMap/savepict.png</file>
+    <file>images/thematicMap/up.png</file>
+   
+  </qresource>
+</RCC>

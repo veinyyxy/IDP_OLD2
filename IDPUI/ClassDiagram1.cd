@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WindowsModernStylePlugin" Collapsed="true">
+    <Position X="21.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>windowsmodernstyle.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlAnimatic" Collapsed="true">
+    <Position X="19.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAQgAAAA=</HashCode>
+      <FileName>AnimaticAction.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayAction" Collapsed="true">
+    <Position X="8" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAACAAAAAAAAAQAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>AnimaticAction.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PauseAction" Collapsed="true">
+    <Position X="10.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAACAAAAAAAAAQAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>AnimaticAction.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StopAction" Collapsed="true">
+    <Position X="12.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAACQAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AnimaticAction.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="speeddownAction" Collapsed="true">
+    <Position X="14.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAACAAAAAAAAAQAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AnimaticAction.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="speedupAction" Collapsed="true">
+    <Position X="17" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAACAAAAAAAAAQAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>AnimaticAction.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PreAction" Collapsed="true">
+    <Position X="1.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAACAAAAAAAAAQAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>AnimaticAction.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NextAction" Collapsed="true">
+    <Position X="3.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAGAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AnimaticAction.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoopAction" Collapsed="true">
+    <Position X="5.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAACAAAAAAAAAQIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AnimaticAction.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyActionInterface" Collapsed="true">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAABQA=</HashCode>
+      <FileName>MyActionInterface.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StatusToolBar" Collapsed="true">
+    <Position X="24.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAAACASAIBEFA0IAAAgIEkAABgQAABAADAAgAAAAAAA=</HashCode>
+      <FileName>statustoolbar.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinToolBar" Collapsed="true">
+    <Position X="23" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAQAEAAAAAAAgAAACAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>WinToolBar.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsModernStyle" Collapsed="true">
+    <Position X="19.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AADABJCJMAAgAAQgCFIgCBABEBAlihgkAAAACAEACAA=</HashCode>
+      <FileName>windowsmodernstyle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DefaultToolBar" Collapsed="true">
+    <Position X="24.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAgAAAUUAAAAEAACAAAAABAAAABAGABABAAABI=</HashCode>
+      <FileName>DefaultToolBar.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CentralStackedWidget" Collapsed="true">
+    <Position X="24.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAASAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CentralStackedWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FieldDialog" Collapsed="true">
+    <Position X="26.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAEAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>FieldDialog.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AttributeDockWidget" Collapsed="true">
+    <Position X="21.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BABAAAAgAAAAEAQAAAAAAAAAAAAAAACAAAABAAAACAE=</HashCode>
+      <FileName>AttributeDockWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataDockWidget" Collapsed="true">
+    <Position X="21.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAOAAAAAAAFgQAAAAIAAABwAAAkAAAIEABAAACAAA=</HashCode>
+      <FileName>DataDockWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AreaDialog" Collapsed="true">
+    <Position X="19.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAACAAAAAAAAI=</HashCode>
+      <FileName>AreaDialog.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DB2Dialog" Collapsed="true">
+    <Position X="23" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAQAAAAAAAAAECAAAAAAAAA=</HashCode>
+      <FileName>DB2Dialog.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RadarWidget" Collapsed="true">
+    <Position X="23" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>RadarWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NewIDPDialog" Collapsed="true">
+    <Position X="24.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAQAAAAAAAIACAAAAAAAAA=</HashCode>
+      <FileName>NewIDPDialog.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LeftDockWidget" Collapsed="true">
+    <Position X="19.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAgQAAAAAEAAIABAAAAEAABAASAgEACAAAJAAAAQ=</HashCode>
+      <FileName>LeftDockWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CentralMdiArea" Collapsed="true">
+    <Position X="23" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAQAAAAACAAAAAAAAA=</HashCode>
+      <FileName>CentralMdiArea.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WelcomeWidget" Collapsed="true">
+    <Position X="26.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WelcomeWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConfigDialog" Collapsed="true">
+    <Position X="26.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAEAAAAAAAEAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConfigDialog.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RadarToolBar" Collapsed="true">
+    <Position X="21.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AUCAAEAgAAAAEIAAAAAAkAAAAAAAAAARACAAAAAAAAA=</HashCode>
+      <FileName>RadarToolBar.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MapToolBar" Collapsed="true">
+    <Position X="23" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAACAAAAAAAAAAABACAAAAAAAAA=</HashCode>
+      <FileName>MapToolBar.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlotDialog" Collapsed="true">
+    <Position X="26.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAgABACCAgAAEAAABCCAAIAgAAAAAAAAQCgAAAAAIAA=</HashCode>
+      <FileName>PlotDialog.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QRecentFilesMenu" Collapsed="true">
+    <Position X="19.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAhAEAgCAAAIAABAAAAAAAAAAkAgAA=</HashCode>
+      <FileName>QRecentFilesMenu.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MainWindow" Collapsed="true">
+    <Position X="21.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAkgAAAOAAMAAIRLEIBEACsABBAAECAAuKAkIACAAA=</HashCode>
+      <FileName>MainWindow.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_AreaDialog" Collapsed="true">
+    <Position X="9.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YAAAAAgAABAIABEAAAAAAQACAAQAIAAAAKAAAAAAAEA=</HashCode>
+      <FileName>GeneratedFiles\ui_AreaDialog.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_AttributeDockWidget" Collapsed="true">
+    <Position X="12.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAQAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_AttributeDockWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_CentralMdiArea" Collapsed="true">
+    <Position X="6.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_CentralMdiArea.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_CentralStackedWidget" Collapsed="true">
+    <Position X="12.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_CentralStackedWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_DataDockWidget" Collapsed="true">
+    <Position X="3.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wwAAACAAECAABBRAAIAAAAACAASAIIAAIIAAgIAABEg=</HashCode>
+      <FileName>GeneratedFiles\ui_DataDockWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_DB2Dialog" Collapsed="true">
+    <Position X="12.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAABAAAAAAAAAAAAQAIAAIAKAAAAAQAEA=</HashCode>
+      <FileName>GeneratedFiles\ui_DB2Dialog.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_DefaultToolBar" Collapsed="true">
+    <Position X="0.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAIAAAAAAgAQAIAAAAAAAAAIAAgA=</HashCode>
+      <FileName>GeneratedFiles\ui_DefaultToolBar.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_FieldDialog" Collapsed="true">
+    <Position X="9.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAQAIAAAAIAAAAAAAEA=</HashCode>
+      <FileName>GeneratedFiles\ui_FieldDialog.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_LeftDockWidget" Collapsed="true">
+    <Position X="6.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAQAIAACAIAAAAAAAEA=</HashCode>
+      <FileName>GeneratedFiles\ui_LeftDockWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_MapToolBar" Collapsed="true">
+    <Position X="9.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAACAAAAAAAAAAAAAAAAAAAAAQgIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_MapToolBar.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_NewIDPDialog" Collapsed="true">
+    <Position X="3.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAIAAAAIAAEIEAAGA=</HashCode>
+      <FileName>GeneratedFiles\ui_NewIDPDialog.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_newWindDlg" Collapsed="true">
+    <Position X="9.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECAAYAAAAAAAAAAAAAAAAAAAQAIAAAAIAAAAAAAEA=</HashCode>
+      <FileName>GeneratedFiles\ui_newWindDlg.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_PlotDialog" Collapsed="true">
+    <Position X="0.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_PlotDialog.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_RadarToolBar" Collapsed="true">
+    <Position X="6.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAQABAAAAAAAAAAAAAAAAAQAIAAAAAAAAAAAEAA=</HashCode>
+      <FileName>GeneratedFiles\ui_RadarToolBar.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_RadarWidget" Collapsed="true">
+    <Position X="3.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_RadarWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_WinToolBar" Collapsed="true">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQIAAAgABQAACAASAAAAAAAAQAIAAAAAAAAAEAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_WinToolBar.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_ConfigDialog" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>nwBAw4AAAIAEAFAAICAAAAAAAAQAIAACAKAAAACAGHA=</HashCode>
+      <FileName>GeneratedFiles\ui_ConfigDialog.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_WelcomeWidget" Collapsed="true">
+    <Position X="3.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_WelcomeWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_MainWindowClass" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAQAIAAAAQAIAAAgAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_MainWindow.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::AreaDialog" Collapsed="true">
+    <Position X="9.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_AreaDialog.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::AttributeDockWidget" Collapsed="true">
+    <Position X="12.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_AttributeDockWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::CentralMdiArea" Collapsed="true">
+    <Position X="6.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_CentralMdiArea.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::CentralStackedWidget" Collapsed="true">
+    <Position X="12.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_CentralStackedWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::DataDockWidget" Collapsed="true">
+    <Position X="3.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_DataDockWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::DB2Dialog" Collapsed="true">
+    <Position X="12.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_DB2Dialog.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::DefaultToolBar" Collapsed="true">
+    <Position X="0.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_DefaultToolBar.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::FieldDialog" Collapsed="true">
+    <Position X="9.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_FieldDialog.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::LeftDockWidget" Collapsed="true">
+    <Position X="6.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_LeftDockWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::MapToolBar" Collapsed="true">
+    <Position X="9.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_MapToolBar.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::NewIDPDialog" Collapsed="true">
+    <Position X="3.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_NewIDPDialog.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::newWindDlg" Collapsed="true">
+    <Position X="9.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_newWindDlg.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::PlotDialog" Collapsed="true">
+    <Position X="0.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_PlotDialog.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::RadarToolBar" Collapsed="true">
+    <Position X="6.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_RadarToolBar.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::RadarWidget" Collapsed="true">
+    <Position X="3.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_RadarWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::WinToolBar" Collapsed="true">
+    <Position X="6.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_WinToolBar.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::ConfigDialog" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_ConfigDialog.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::WelcomeWidget" Collapsed="true">
+    <Position X="3.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_WelcomeWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::MainWindowClass" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_MainWindow.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Typedef Name="PtrIsAppThemed" Collapsed="true">
+    <Position X="21.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>windowsmodernstyle.cpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="PtrGetCurrentThemeName" Collapsed="true">
+    <Position X="19.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>windowsmodernstyle.cpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Enum Name="WDataType" Collapsed="true">
+    <Position X="19.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAEAAAAAAAgEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IDPdb.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="WinStyle" Collapsed="true">
+    <Position X="21.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAQAAA=</HashCode>
+      <FileName>MainWindow.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

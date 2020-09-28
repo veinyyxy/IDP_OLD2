@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>DBDockWidget</class>
+  <widget class="QDockWidget" name="DBDockWidget">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>344</width>
+        <height>568</height>
+      </rect>
+    </property>
+    <property name="windowTitle">
+      <string>数据窗口</string>
+    </property>
+    <widget class="QWidget" name="widget">
+      <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+          <layout class="QGridLayout" name="gridLayout">
+            <item row="0" column="0">
+              <widget class="QTabWidget" name="tabWidget">
+                <property name="currentIndex">
+                  <number>0</number>
+                </property>
+                <widget class="QWidget" name="SingleTab">
+                  <attribute name="title">
+                    <string>单站产品</string>
+                  </attribute>
+                  <layout class="QGridLayout" name="gridLayout_4">
+                    <item row="0" column="0">
+                      <layout class="QGridLayout" name="gridLayout_3">
+                        <item row="0" column="0">
+                          <widget class="QLabel" name="label">
+                            <property name="text">
+                              <string>产品名称：</string>
+                            </property>
+                          </widget>
+                        </item>
+                        <item row="1" column="0">
+                          <widget class="QLabel" name="label_2">
+                            <property name="text">
+                              <string>产品区域：</string>
+                            </property>
+                          </widget>
+                        </item>
+                        <item row="2" column="0">
+                          <widget class="QLabel" name="label_3">
+                            <property name="text">
+                              <string>选择日期：</string>
+                            </property>
+                          </widget>
+                        </item>
+                        <item row="3" column="0">
+                          <widget class="QCheckBox" name="chb_day_s">
+                            <property name="text">
+                              <string>日</string>
+                            </property>
+                          </widget>
+                        </item>
+                        <item row="3" column="1">
+                          <widget class="QComboBox" name="cmb_day_s">
+                            <item>
+                              <property name="text">
+                                <string>1天以内</string>
+                              </property>
+                            </item>
+                            <item>
+                              <property name="text">
+                                <string>2天以内</string>
+                              </property>
+                            </item>
+                            <item>
+                              <property name="text">
+                                <string>3天以内</string>
+                              </property>
+                            </item>
+                          </widget>
+                        </item>
+                        <item row="3" column="2">
+                          <widget class="QCheckBox" name="chb_hour_s">
+                            <property name="text">
+                              <string>时</string>
+                            </property>
+                          </widget>
+                        </item>
+                        <item row="3" column="3">
+                          <widget class="QComboBox" name="cmb_hour_s"/>
+                        </item>
+                        <item row="4" column="0" colspan="4">
+                          <widget class="QTableWidget" name="tableWidget_s">
+                            <column>
+                              <property name="text">
+                                <string>日期</string>
+                              </property>
+                            </column>
+                            <column>
+                              <property name="text">
+                                <string>时间</string>
+                              </property>
+                            </column>
+                          </widget>
+                        </item>
+                        <item row="0" column="1" colspan="3">
+                          <widget class="QComboBox" name="cmbName_s"/>
+                        </item>
+                        <item row="1" column="1" colspan="3">
+                          <widget class="QComboBox" name="cmbAre_s"/>
+                        </item>
+                        <item row="2" column="1" colspan="3">
+                          <widget class="QDateTimeEdit" name="dateTimeEdit_s"/>
+                        </item>
+                      </layout>
+                    </item>
+                  </layout>
+                </widget>
+                <widget class="QWidget" name="MosaicTab">
+                  <attribute name="title">
+                    <string>组网产品</string>
+                  </attribute>
+                  <layout class="QGridLayout" name="gridLayout_6">
+                    <item row="0" column="0">
+                      <layout class="QGridLayout" name="gridLayout_5">
+                        <item row="0" column="0">
+                          <widget class="QLabel" name="label_4">
+                            <property name="text">
+                              <string>产品名称：</string>
+                            </property>
+                          </widget>
+                        </item>
+                        <item row="1" column="0">
+                          <widget class="QLabel" name="label_5">
+                            <property name="text">
+                              <string>选择日期：</string>
+                            </property>
+                          </widget>
+                        </item>
+                        <item row="2" column="0">
+                          <widget class="QCheckBox" name="chb_day_m">
+                            <property name="text">
+                              <string>日</string>
+                            </property>
+                          </widget>
+                        </item>
+                        <item row="2" column="1">
+                          <widget class="QComboBox" name="cmb_day_m">
+                            <item>
+                              <property name="text">
+                                <string>1天以内</string>
+                              </property>
+                            </item>
+                            <item>
+                              <property name="text">
+                                <string>2天以内</string>
+                              </property>
+                            </item>
+                            <item>
+                              <property name="text">
+                                <string>3天以内</string>
+                              </property>
+                            </item>
+                          </widget>
+                        </item>
+                        <item row="2" column="2">
+                          <widget class="QCheckBox" name="chb_hour_m">
+                            <property name="text">
+                              <string>时</string>
+                            </property>
+                          </widget>
+                        </item>
+                        <item row="2" column="3">
+                          <widget class="QComboBox" name="cmb_hour_m"/>
+                        </item>
+                        <item row="3" column="0" colspan="4">
+                          <widget class="QTableWidget" name="tableWidget_m">
+                            <column>
+                              <property name="text">
+                                <string>日期</string>
+                              </property>
+                            </column>
+                            <column>
+                              <property name="text">
+                                <string>时间</string>
+                              </property>
+                            </column>
+                          </widget>
+                        </item>
+                        <item row="0" column="1" colspan="3">
+                          <widget class="QComboBox" name="cmbName_m"/>
+                        </item>
+                        <item row="1" column="1" colspan="3">
+                          <widget class="QDateTimeEdit" name="dateTimeEdit_m"/>
+                        </item>
+                      </layout>
+                    </item>
+                  </layout>
+                </widget>
+              </widget>
+            </item>
+          </layout>
+        </item>
+      </layout>
+    </widget>
+  </widget>
+  <layoutdefault spacing="6" margin="11"/>
+  <resources/>
+  <connections/>
+</ui>

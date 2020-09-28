@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LeftDockWidget</class>
+ <widget class="QDockWidget" name="LeftDockWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>310</width>
+    <height>541</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>280</width>
+    <height>240</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>图层控制</string>
+  </property>
+  <widget class="QWidget" name="widget">
+   <property name="styleSheet">
+    <string notr="true">QPushButton{	border: none;color: #000000;}
+QPushButton:hover{border: 1px solid #E0B66E;}
+QPushButton:pressed{border: 1px solid #DE951C;border-bottom: none;color: white;}
+QPushButton:checked{border: 1px solid #DE951C;border-bottom: none;color: white;}</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QToolBar" name="toolBar"/>
+    </item>
+    <item>
+     <widget class="QTreeView" name="treeWidget">
+      <attribute name="headerDefaultSectionSize">
+       <number>0</number>
+      </attribute>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

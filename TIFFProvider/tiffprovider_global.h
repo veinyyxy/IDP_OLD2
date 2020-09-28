@@ -1,0 +1,12 @@
+#ifndef TIFFPROVIDER_GLOBAL_H
+#define TIFFPROVIDER_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#ifndef TIFFPROVIDER_LIB
+# define TIFFPROVIDER_EXPORT Q_DECL_EXPORT
+#else
+# define TIFFPROVIDER_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // TIFFPROVIDER_GLOBAL_H

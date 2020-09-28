@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CoordinateTransform" Collapsed="true">
+    <Position X="2.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAABCIQAAAQCAAACAAAAAAJMIAAAAAA=</HashCode>
+      <FileName>CoordinateTransform.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataProvider" Collapsed="true">
+    <Position X="28.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAgQgAAAAQAAFAAABBABAgAgAAACAAAIAAAJAA=</HashCode>
+      <FileName>DataProvider.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeomField" Collapsed="true">
+    <Position X="30.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAABBAAAAEAAAAAEg2ARAAQBBFAAFQAAxwAQAAAAA=</HashCode>
+      <FileName>Field.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeoTo3DTransform" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAEAAAAAAFCIQQIAQKAAEAAAAAAABMAAAAAAA=</HashCode>
+      <FileName>GeoTo3DTransform.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="goColorLump" Collapsed="true">
+    <Position X="15" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEIAABAAAAAAACAAAAAAAAAAAAEAABAAAAAAAAA=</HashCode>
+      <FileName>goColorLump.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="goContour" Collapsed="true">
+    <Position X="19.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAEIIAAAAAAABACAAAAAAgAAAAAEgAAgAAAAAIAA=</HashCode>
+      <FileName>goContour.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OSGGeometryMapGEOSGeometry" Collapsed="true">
+    <Position X="32.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>goGeometry.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="goGeometry" Collapsed="true">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQCAEIAAkACAAwCiDQEAAAAASAAAAEgogwgAhAAQgA=</HashCode>
+      <FileName>goGeometry.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="goLinearRing" Collapsed="true">
+    <Position X="1.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEIAAAAAAAAAACAAAAAAAAgAAAEAAAAgAAAAAAA=</HashCode>
+      <FileName>goLinearRing.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="goLineString" Collapsed="true">
+    <Position X="6" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAMIAAAAAAAAAACAAABAAAAAAAAEAAAAgAAAAAAA=</HashCode>
+      <FileName>goLineString.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="goMark" Collapsed="true">
+    <Position X="10.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAMIAQIAhAAAAAOIAAAKQGABAAAEAEGAgAgCAQAg=</HashCode>
+      <FileName>goMark.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="goMultiLineString" Collapsed="true">
+    <Position X="12.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEIAAAAAAAAAACAAAAAAACAAABEAAAAgAAAAAAA=</HashCode>
+      <FileName>goMultiLineString.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="goMultiPoint" Collapsed="true">
+    <Position X="17.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEIAAAAAAAAAACAQAAAAAAAAAAMAAAAgAAAAAAA=</HashCode>
+      <FileName>goMultiPoint.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="goMultiPolygon" Collapsed="true">
+    <Position X="21.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEIAAAAAAAAABCAAACAAAAAAAAEAAAAgAAAAAAA=</HashCode>
+      <FileName>goMultiPolygon.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="goPoint" Collapsed="true">
+    <Position X="24" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEIAAAAAAAAAACAAAQAAAEAAAAEAAAAgAAAAAAA=</HashCode>
+      <FileName>goPoint.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="goPolygon" Collapsed="true">
+    <Position X="26.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEIAgAAAAABAACAAAAAABAAAAAEAAAAgAAAAAAA=</HashCode>
+      <FileName>goPolygon.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="goQuadrilateral" Collapsed="true">
+    <Position X="3.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEIIAAIAAAAAACQCAAAEAAAAAAEwAAAgAACAgAA=</HashCode>
+      <FileName>goQuadrilateral.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="goSymbolContainer" Collapsed="true">
+    <Position X="8.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEIIAEIAAAQAAGAABhgACAEBCAEgQCACAAABAgA=</HashCode>
+      <FileName>goSymbolContainer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="goSymbolGeode" Collapsed="true">
+    <Position X="32.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>goSymbolGeode.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="goSymbolPoint" Collapsed="true">
+    <Position X="34" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>WAAEQEKAQAAAAAAgYCgICAAgACAAAgEAiAuAgAQAAAI=</HashCode>
+      <FileName>goSymbolPoint.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QGraticuleCoordinates" Collapsed="true">
+    <Position X="7.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DAIABBKAACAQAAAiIEAIAAEAAgAAgAAAAgAAYAAABgA=</HashCode>
+      <FileName>GraticuleCoordinates.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Layer" Collapsed="true">
+    <Position X="3.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAZAAUgBEQIFVQoAEAACgFgAUFsMJYEFSAhRAUkIEc=</HashCode>
+      <FileName>Layer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LegendInterface" Collapsed="true">
+    <Position X="28.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAgAAAAAAEA=</HashCode>
+      <FileName>LegendInterface.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManualDrawLayer" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAgAEAAQAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>ManualDrawLayer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Map" Collapsed="true">
+    <Position X="30.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAQMACFCBBQpgAAhAAAAACCGwAAAUgkAoSAAAEAA=</HashCode>
+      <FileName>Map.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OsgEarthTransform" Collapsed="true">
+    <Position X="2.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAABCIQAAAQCAAAAAAAAgIBMAAgAAAI=</HashCode>
+      <FileName>OsgEarthTransform.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proj4Transform" Collapsed="true">
+    <Position X="5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIACAAAAAAAADCIUEAAQaAAQCIAAIIAR+AUAABCA=</HashCode>
+      <FileName>Proj4Transform.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RadarVectorLayer" Collapsed="true">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAgAEAAAAAAAAAAAAAAAAAgQAAAAAg=</HashCode>
+      <FileName>RadarVectorLayer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SymbolLibraryInterface" Collapsed="true">
+    <Position X="34" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAEAEAAAAAAAAAAAAABAAAAAAAABAAEAAA=</HashCode>
+      <FileName>SymbolLibraryInterface.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VectorLayer" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgQEAAAAAAAACAAAEAAAAgQAAgAAA=</HashCode>
+      <FileName>VectorLayer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="longlatrect" Collapsed="true">
+    <Position X="5.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAIAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA=</HashCode>
+      <FileName>GraticuleCoordinates.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="LongLatLineData" Collapsed="true">
+    <Position X="1.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gEAASAAAAAAAAAEAAAAAAAAAAAAAACAgAAAAAAAAAAA=</HashCode>
+      <FileName>GraticuleCoordinates.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="TRANSFORM_DIRECTION" Collapsed="true">
+    <Position X="13.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoordinateTransform.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="DataType" Collapsed="true">
+    <Position X="9.25" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataProvider.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="FIELD_MAP" Collapsed="true">
+    <Position X="30.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Field.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="P_FIELD_MAP" Collapsed="true">
+    <Position X="28.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Field.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="FIELD_MAPPair" Collapsed="true">
+    <Position X="32.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Field.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="P_FIELD_MAPPair" Collapsed="true">
+    <Position X="30.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Field.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="LONG_LAT_POINT" Collapsed="true">
+    <Position X="34" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GraticuleCoordinates.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="LONG_LAT_LINE" Collapsed="true">
+    <Position X="34" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GraticuleCoordinates.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="LONG_LAT_LINE_MAP" Collapsed="true">
+    <Position X="28.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GraticuleCoordinates.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="LONG_LAT_MARK_MAP" Collapsed="true">
+    <Position X="32.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GraticuleCoordinates.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="LONG_LAT_LINE_VECTOR" Collapsed="true">
+    <Position X="30.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GraticuleCoordinates.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="ANNOTATION" Collapsed="true">
+    <Position X="28.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GraticuleCoordinates.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="LONG_LAT_RECT" Collapsed="true">
+    <Position X="5.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GraticuleCoordinates.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="LONGLAT_LINE_DATA" Collapsed="true">
+    <Position X="1.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GraticuleCoordinates.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="VECTOR_DATA_TYPE" Collapsed="true">
+    <Position X="10.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VectorLayer.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="P_VECTOR_DATA_TYPE" Collapsed="true">
+    <Position X="9.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VectorLayer.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Enum Name="_Direction" Collapsed="true">
+    <Position X="13.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAQAAAAA=</HashCode>
+      <FileName>CoordinateTransform.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="_DATATYPE" Collapsed="true">
+    <Position X="9.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>DataProvider.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="_VECTOR_DATA_TYPE" Collapsed="true">
+    <Position X="9.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAECAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VectorLayer.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

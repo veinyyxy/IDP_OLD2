@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{02E232C6-638D-4B81-BE68-15968C85FE5B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GradsProvider</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Debug\GDALDebug.props" />
+    <Import Project="..\Debug\OSGDebug.props" />
+    <Import Project="..\Debug\OSGEARTH.props" />
+    <Import Project="..\Debug\QTDIRDebug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Release\OSGEARTH.props" />
+    <Import Project="..\Release\QTDIRRelease.props" />
+    <Import Project="..\Release\GDALRelease.props" />
+    <Import Project="..\Release\OSGRelease.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(OSG_INCLUDE);$(OSG_EARTH_INCLUDE);$(QTDIR)\include;$(QTDIR)\include\Qt;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\Qt3Support;$(QTDIR)\include\QtXml;..\GeosOnTheOsg;..\GraphicsControler;..\NetCDF\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(OSG_EARTH_LIB);$(QTDIR)\lib;..\Debug\Lib;$(OutDir);$(LibraryPath)</LibraryPath>
+    <GenerateManifest>false</GenerateManifest>
+    <OutDir>../$(Configuration)/Bin</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(QTDIR)\include;..\GeosOnTheOsg;..\GraphicsControler;..\NetCDF\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(OSG_EARTH_LIB);$(QTDIR)\lib;..\Release\Lib;$(OutDir);$(LibraryPath)</LibraryPath>
+    <OutDir>..\$(Configuration)\Bin\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../IDataProvider;../CDataElement;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>QTCORED4.lib;QTGUID4.lib;glu32.lib;opengl32.lib;proj_i.lib;gdal_i.lib;geos.lib;OpenThreadsd.lib;osgAnimationd.lib;osgd.lib;osgDBd.lib;osgFXd.lib;osgGAd.lib;osgManipulatord.lib;osgParticled.lib;osgPresentationd.lib;osgQtd.lib;osgShadowd.lib;osgSimd.lib;osgTerraind.lib;osgTextd.lib;osgUtild.lib;osgViewerd.lib;osgVolumed.lib;osgWidgetd.lib;osgEarthd.lib;osgEarthFeaturesd.lib;osgEarthUtild.lib;osgEarthSymbologyd.lib;GeosOnTheOsg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <Version>1.0.00000.0</Version>
+      <ImportLibrary>..\$(Configuration)\Lib\$(ProjectName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>QtCore4.lib;QtGui4.lib;geos.lib;osg.lib;CDataElement.lib;GeosOnTheOsg.lib;OpenThreads.lib;osgAnimation.lib;osgDB.lib;osgFX.lib;osgGA.lib;osgManipulator.lib;osgParticle.lib;osgPresentation.lib;osgQt.lib;osgShadowd.lib;osgSim.lib;osgTerrain.lib;osgText.lib;osgUtil.lib;osgViewer.lib;osgVolume.lib;osgWidget.lib;osgEarth.lib;osgEarthFeatures.lib;osgEarthUtil.lib;osgEarthSymbology.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\$(Configuration)\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>..\$(Configuration)\Lib\$(ProjectName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CressmanInterpolation.cpp" />
+    <ClCompile Include="gabufr.cpp" />
+    <ClCompile Include="gaddes.cpp" />
+    <ClCompile Include="gaexpr.cpp" />
+    <ClCompile Include="gafunc.cpp" />
+    <ClCompile Include="gagx.cpp" />
+    <ClCompile Include="gaio.cpp" />
+    <ClCompile Include="galloc.cpp" />
+    <ClCompile Include="gamach.cpp" />
+    <ClCompile Include="gatxt.cpp" />
+    <ClCompile Include="gauser.cpp" />
+    <ClCompile Include="gautil.cpp" />
+    <ClCompile Include="GeneralBarb.cpp" />
+    <ClCompile Include="GeneralContour.cpp" />
+    <ClCompile Include="GeneralGird.cpp" />
+    <ClCompile Include="GeneralPolylineBar.cpp" />
+    <ClCompile Include="GeneralShaded.cpp" />
+    <ClCompile Include="GeneralShadedLineBound.cpp" />
+    <ClCompile Include="GeneralStream.cpp" />
+    <ClCompile Include="GeneralVector.cpp" />
+    <ClCompile Include="grads.cpp" />
+    <ClCompile Include="GradsDataInterfaceImp.cpp" />
+    <ClCompile Include="grib2scan.cpp" />
+    <ClCompile Include="gscrpt.cpp" />
+    <ClCompile Include="gxchpl.cpp" />
+    <ClCompile Include="gxcntrs.cpp" />
+    <ClCompile Include="gxmeta.cpp" />
+    <ClCompile Include="gxshad.cpp" />
+    <ClCompile Include="gxstrm.cpp" />
+    <ClCompile Include="gxsubs.cpp" />
+    <ClCompile Include="gxwmap.cpp" />
+    <ClCompile Include="gxX.cpp" />
+    <ClCompile Include="GradsProvider.cpp" />
+    <ClCompile Include="Interpolation_InverseDistance.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Interpolation_NaturalNeighbour.cpp" />
+    <ClCompile Include="MeteorologyProducts.cpp" />
+    <ClCompile Include="NinePointSmoother.cpp" />
+    <ClCompile Include="stnmap.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bitmaps.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="CressmanInterpolation.h" />
+    <ClInclude Include="DataInterface.h" />
+    <ClInclude Include="gabufr.h" />
+    <ClInclude Include="gaddes.h" />
+    <ClInclude Include="gaexpr.h" />
+    <ClInclude Include="gafunc.h" />
+    <ClInclude Include="gagx.h" />
+    <ClInclude Include="gaio.h" />
+    <ClInclude Include="galloc.h" />
+    <ClInclude Include="gamach.h" />
+    <ClInclude Include="gatxt.h" />
+    <ClInclude Include="gatypes.h" />
+    <ClInclude Include="gauser.h" />
+    <ClInclude Include="gautil.h" />
+    <ClInclude Include="GeneralBarb.h" />
+    <ClInclude Include="GeneralContour.h" />
+    <ClInclude Include="GeneralGird.h" />
+    <ClInclude Include="GeneralPolylineBar.h" />
+    <ClInclude Include="GeneralShaded.h" />
+    <ClInclude Include="GeneralShadedLineBound.h" />
+    <ClInclude Include="GeneralStream.h" />
+    <ClInclude Include="GeneralVector.h" />
+    <ClInclude Include="grads.h" />
+    <ClInclude Include="GradsConfig.h" />
+    <ClInclude Include="GradsDataInterfaceImp.h" />
+    <ClInclude Include="grib2scan.h" />
+    <ClInclude Include="gscrpt.h" />
+    <ClInclude Include="gx.h" />
+    <ClInclude Include="gxchpl.h" />
+    <ClInclude Include="gxcntrs.h" />
+    <ClInclude Include="gxmeta.h" />
+    <ClInclude Include="gxshad.h" />
+    <ClInclude Include="gxstrm.h" />
+    <ClInclude Include="gxsubs.h" />
+    <ClInclude Include="gxwmap.h" />
+    <ClInclude Include="gxX.h" />
+    <CustomBuild Include="GradsProvider.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"..\..\..\include\QtCore" -I"..\..\..\include\QtGui" -I"..\..\..\include\QtOpenGL" -I"..\..\..\include" -I"..\..\..\include\ActiveQt" -I..\..\..\mkspecs\win32-msvc2010 -D_MSC_VER=1600 -DWIN32 GradsProvider.h -o moc_GradsProvider.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc_GradsProvider.cpp</Outputs>
+    </CustomBuild>
+    <ClInclude Include="Interpolation_InverseDistance.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Interpolation_NaturalNeighbour.h" />
+    <ClInclude Include="MeteorologyProducts.h" />
+    <ClInclude Include="NinePointSmoother.h" />
+    <ClInclude Include="QT_Include.h" />
+    <ClInclude Include="stnmap.h" />
+    <ClInclude Include="wx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

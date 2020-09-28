@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ThematicToolBar</class>
+ <widget class="QToolBar" name="ThematicToolBar">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>743</width>
+    <height>83</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ThematicToolBar</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>25</width>
+    <height>25</height>
+   </size>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextUnderIcon</enum>
+  </property>
+  <action name="mActionPrint">
+   <property name="icon">
+    <iconset>
+     <normalon>:/images/thematicMap/mActionFilePrint.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>打印…</string>
+   </property>
+   <property name="toolTip">
+    <string>打印</string>
+   </property>
+  </action>
+  <action name="mActionZoomAll">
+   <property name="icon">
+    <iconset>
+     <normalon>:/images/thematicMap/mActionPageZoomFullExtent.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>纸张全图</string>
+   </property>
+   <property name="toolTip">
+    <string>纸张全图</string>
+   </property>
+  </action>
+  <action name="mActionZoomIn">
+   <property name="icon">
+    <iconset>
+     <normalon>:/images/thematicMap/mActionPageZoomIn.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>纸张放大</string>
+   </property>
+   <property name="toolTip">
+    <string>纸张放大</string>
+   </property>
+  </action>
+  <action name="mActionZoomOut">
+   <property name="icon">
+    <iconset>
+     <normalon>:/images/thematicMap/mActionPageZoomOut.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>纸张缩小</string>
+   </property>
+   <property name="toolTip">
+    <string>纸张缩小</string>
+   </property>
+  </action>
+  <action name="mActionMapZoomAll">
+   <property name="icon">
+    <iconset>
+     <normalon>:/images/thematicMap/mActionZoomFullExtent.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>地图全图</string>
+   </property>
+   <property name="toolTip">
+    <string>地图全图</string>
+   </property>
+  </action>
+  <action name="mActionMapZoomIn">
+   <property name="icon">
+    <iconset>
+     <normalon>:/images/thematicMap/mActionZoomIn.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>地图放大</string>
+   </property>
+   <property name="toolTip">
+    <string>地图放大</string>
+   </property>
+  </action>
+  <action name="mActionMapZoomOut">
+   <property name="icon">
+    <iconset>
+     <normalon>:/images/thematicMap/mActionZoomOut.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>地图缩小</string>
+   </property>
+   <property name="toolTip">
+    <string>地图缩小</string>
+   </property>
+  </action>
+  <action name="mActionAddGLW">
+   <property name="icon">
+    <iconset>
+     <normalon>:/images/thematicMap/mActionAddNonDbLayer.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>添加地图</string>
+   </property>
+   <property name="toolTip">
+    <string>添加地图</string>
+   </property>
+  </action>
+  <action name="mActionAddNewLabel">
+   <property name="icon">
+    <iconset>
+     <normalon>:/images/thematicMap/mActionLabel.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>添加标签</string>
+   </property>
+   <property name="toolTip">
+    <string>添加标签</string>
+   </property>
+  </action>
+  <action name="mActionAddNewLegend">
+   <property name="icon">
+    <iconset>
+     <normalon>:/images/thematicMap/mActionAddLegend.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>添加图例</string>
+   </property>
+   <property name="toolTip">
+    <string>添加图例</string>
+   </property>
+  </action>
+  <action name="mActionSelectMoveItem">
+   <property name="icon">
+    <iconset>
+     <normalon>:/images/thematicMap/mActionSelectMoveItem.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>选择/移动 项</string>
+   </property>
+   <property name="toolTip">
+    <string>选择/移动 项</string>
+   </property>
+  </action>
+  <action name="mActionExportAsImage">
+   <property name="icon">
+    <iconset>
+     <normalon>:/images/thematicMap/savepict.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>导出图片</string>
+   </property>
+   <property name="toolTip">
+    <string>导出图片</string>
+   </property>
+  </action>
+  <action name="mActionExport2Clipboard">
+   <property name="icon">
+    <iconset>
+     <normalon>:/images/thematicMap/copy.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>复制到剪切板</string>
+   </property>
+   <property name="toolTip">
+    <string>复制到剪切板</string>
+   </property>
+  </action>
+  <action name="mActionExportAsPDF">
+   <property name="icon">
+    <iconset>
+     <normalon>:/images/thematicMap/mActionSaveAsPDF.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>导出PDF</string>
+   </property>
+   <property name="toolTip">
+    <string>导出PDF</string>
+   </property>
+  </action>
+  <action name="mActionExportAsEPS">
+   <property name="icon">
+    <iconset>
+     <normalon>:/images/thematicMap/mActionExportAsEPS.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>导出EPS</string>
+   </property>
+   <property name="toolTip">
+    <string>导出EPS</string>
+   </property>
+  </action>
+  <action name="mActionExportAsSVG">
+   <property name="icon">
+    <iconset>
+     <normalon>:/images/thematicMap/mActionSaveAsSVG.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>导出SVG</string>
+   </property>
+   <property name="toolTip">
+    <string>导出SVG</string>
+   </property>
+  </action>
+  <action name="mActionAddNewScalebar">
+   <property name="icon">
+    <iconset>
+     <normalon>:/images/thematicMap/mActionScaleBar.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>添加比例尺</string>
+   </property>
+   <property name="toolTip">
+    <string>添加比例尺</string>
+   </property>
+  </action>
+  <action name="mActionRefreshView">
+   <property name="icon">
+    <iconset>
+     <normalon>:/images/thematicMap/mActionRefreshView.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>刷新</string>
+   </property>
+   <property name="toolTip">
+    <string>刷新视图</string>
+   </property>
+  </action>
+  <action name="mActionAddImage">
+   <property name="icon">
+    <iconset>
+     <normalon>:/images/thematicMap/mActionAddMap.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>增加图片</string>
+   </property>
+   <property name="toolTip">
+    <string>增加图片</string>
+   </property>
+  </action>
+  <action name="mActionMoveItemContent">
+   <property name="icon">
+    <iconset>
+     <normalon>:/images/thematicMap/mActionPan.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>移动地图内容</string>
+   </property>
+   <property name="toolTip">
+    <string>移动地图内容</string>
+   </property>
+  </action>
+  <action name="mActionGroupItems">
+   <property name="icon">
+    <iconset>
+     <normalon>:/images/thematicMap/mActionGroupItems.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>组合</string>
+   </property>
+   <property name="toolTip">
+    <string>组合项</string>
+   </property>
+  </action>
+  <action name="mActionUngroupItems">
+   <property name="icon">
+    <iconset>
+     <normalon>:/images/thematicMap/mActionUngroupItems.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>分组</string>
+   </property>
+   <property name="toolTip">
+    <string>分组项</string>
+   </property>
+  </action>
+  <action name="mActionRaiseItems">
+   <property name="icon">
+    <iconset>
+     <normalon>:/images/thematicMap/mActionRaiseItems.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>前移</string>
+   </property>
+   <property name="toolTip">
+    <string>向前移动选中的项</string>
+   </property>
+  </action>
+  <action name="mActionLowerItems">
+   <property name="icon">
+    <iconset>
+     <normalon>:/images/thematicMap/mActionLowerItems.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>后移</string>
+   </property>
+   <property name="toolTip">
+    <string>向后移动选中的项</string>
+   </property>
+  </action>
+  <action name="mActionMoveItemsToTop">
+   <property name="icon">
+    <iconset>
+     <normalon>:/images/thematicMap/mActionMoveItemsToTop.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>移至最前</string>
+   </property>
+   <property name="toolTip">
+    <string>移动选中的项到最前</string>
+   </property>
+  </action>
+  <action name="mActionMoveItemsToBottom">
+   <property name="icon">
+    <iconset>
+     <normalon>:/images/thematicMap/mActionMoveItemsToBottom.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>移至最后</string>
+   </property>
+   <property name="toolTip">
+    <string>移动选中的项到最后</string>
+   </property>
+  </action>
+  <action name="mActionLoadFromTemplate">
+   <property name="text">
+    <string>加载模板</string>
+   </property>
+   <property name="toolTip">
+    <string>加载模板</string>
+   </property>
+  </action>
+  <action name="mActionSaveAsTemplate">
+   <property name="text">
+    <string>保存模板</string>
+   </property>
+   <property name="toolTip">
+    <string>保存模板</string>
+   </property>
+  </action>
+  <action name="mActionAlignLeft">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/thematicMap/mActionAlignLeft.png</normaloff>:/images/thematicMap/mActionAlignLeft.png</iconset>
+   </property>
+   <property name="text">
+    <string>左齐</string>
+   </property>
+   <property name="toolTip">
+    <string>向左对齐选中项</string>
+   </property>
+  </action>
+  <action name="mActionAlignHCenter">
+   <property name="icon">
+    <iconset>
+     <normalon>:/images/thematicMap/mActionAlignHCenter.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>居中对齐</string>
+   </property>
+   <property name="toolTip">
+    <string>居中对齐</string>
+   </property>
+  </action>
+  <action name="mActionUndo">
+   <property name="icon">
+    <iconset>
+     <normalon>:/images/thematicMap/mActionUndo.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>撤销</string>
+   </property>
+   <property name="toolTip">
+    <string>撤销</string>
+   </property>
+  </action>
+  <action name="mActionRedo">
+   <property name="icon">
+    <iconset>
+     <normalon>:/images/thematicMap/mActionRedo.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>重做</string>
+   </property>
+   <property name="toolTip">
+    <string>重做</string>
+   </property>
+  </action>
+  <addaction name="separator"/>
+  <addaction name="mActionLoadFromTemplate"/>
+  <addaction name="mActionSaveAsTemplate"/>
+  <addaction name="mActionExportAsImage"/>
+  <addaction name="mActionExportAsPDF"/>
+  <addaction name="mActionExportAsEPS"/>
+  <addaction name="mActionExportAsSVG"/>
+  <addaction name="mActionExport2Clipboard"/>
+  <addaction name="mActionPrint"/>
+  <addaction name="separator"/>
+  <addaction name="mActionMapZoomAll"/>
+  <addaction name="mActionMapZoomIn"/>
+  <addaction name="mActionMapZoomOut"/>
+  <addaction name="mActionMoveItemContent"/>
+  <addaction name="mActionRefreshView"/>
+  <addaction name="separator"/>
+  <addaction name="mActionUndo"/>
+  <addaction name="mActionRedo"/>
+  <addaction name="mActionAddGLW"/>
+  <addaction name="mActionAddNewLabel"/>
+  <addaction name="mActionAddNewLegend"/>
+  <addaction name="mActionAddNewScalebar"/>
+  <addaction name="mActionAddImage"/>
+  <addaction name="separator"/>
+  <addaction name="mActionZoomAll"/>
+  <addaction name="mActionZoomIn"/>
+  <addaction name="mActionZoomOut"/>
+  <addaction name="mActionSelectMoveItem"/>
+  <addaction name="separator"/>
+  <addaction name="mActionGroupItems"/>
+  <addaction name="mActionUngroupItems"/>
+  <addaction name="mActionRaiseItems"/>
+  <addaction name="mActionLowerItems"/>
+  <addaction name="mActionMoveItemsToTop"/>
+  <addaction name="mActionMoveItemsToBottom"/>
+  <addaction name="mActionAlignLeft"/>
+  <addaction name="mActionAlignHCenter"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="mainwindow.qrc"/>
+ </resources>
+ <connections/>
+</ui>

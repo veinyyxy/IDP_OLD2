@@ -1,0 +1,690 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CipasColorButton" Collapsed="true">
+    <Position X="29.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAACAAAAAIgAIAgA=</HashCode>
+      <FileName>cipascolorbutton.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CipasColorButtonV2" Collapsed="true">
+    <Position X="31.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAgAAAAAIAgA=</HashCode>
+      <FileName>cipascolorbutton.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasComposerArrow" Collapsed="true">
+    <Position X="3.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AJgIAgAACYKIgAABgIAAAAJCAoABAgQAsACIAAAARAI=</HashCode>
+      <FileName>CipasComposerArrow.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasComposerLegendItem" Collapsed="true">
+    <Position X="7.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIABAAAAAAAICAAAAAAAABAAAkAAIAgA=</HashCode>
+      <FileName>CipasComposerLegendItem.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasComposerLayerItem" Collapsed="true">
+    <Position X="5.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAEAAAAAAAAAAICQAAAAAEEAAAAEAAAAAA=</HashCode>
+      <FileName>CipasComposerLegendItem.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasComposerRasterSymbolItem" Collapsed="true">
+    <Position X="7.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAEAAAAAAAAAAAAAAAICQAAAAAAEAAAAEAAEAAA=</HashCode>
+      <FileName>CipasComposerLegendItem.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasComposerGroupItem" Collapsed="true">
+    <Position X="10" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAEAICAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>CipasComposerLegendItem.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasComposerShadedLayerItem" Collapsed="true">
+    <Position X="12.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAICQAAQAAAEAAAAEBAAAAA=</HashCode>
+      <FileName>CipasComposerLegendItem.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasComposerStationLayerItem" Collapsed="true">
+    <Position X="14.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAACAAAAAAAICQAAAACAEAAAAEAAAAAA=</HashCode>
+      <FileName>CipasComposerLegendItem.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasComposerTemperatureLayerItem" Collapsed="true">
+    <Position X="1" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEEAAAAAAAAAAAAAAAICQAAAAAAEAAAAEAAEAAA=</HashCode>
+      <FileName>CipasComposerLegendItem.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasComposerRainLayerItem" Collapsed="true">
+    <Position X="3.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABEAAEAAAAAAAAAAAAAAAICQAAAAAAEAAAAEAAAAAA=</HashCode>
+      <FileName>CipasComposerLegendItem.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CipasComposerLegendItemDialog" Collapsed="true">
+    <Position X="9.5" Y="17.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAABAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cipascomposerlegenditemdialog.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasComposerLegendLayersDialog" Collapsed="true">
+    <Position X="0.5" Y="19.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAACAEAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>CipasComposerLegendLayersDialog.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CipasDoubleBoxScaleBarStyle" Collapsed="true">
+    <Position X="5.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAACAAAAAAAAIAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CipasDoubleboxscalebarstyle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasGISLegendStyle" Collapsed="true">
+    <Position X="0.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACCAAAAAAAAIAAAAEAAAACAAAAAAAAAA=</HashCode>
+      <FileName>CipasGISLegendStyle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasGradsHorizontalLegendStyle" Collapsed="true">
+    <Position X="3" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEACAAAAAAIAIAAAAEAAAACAAAAAAAAAA=</HashCode>
+      <FileName>CipasGradsHorizontalLegendStyle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasGradsVerticalLegendStyle" Collapsed="true">
+    <Position X="5.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAIAABAEABAACAAAAAAAAAA=</HashCode>
+      <FileName>CipasGradsVerticalLegendStyle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasLegendStyle" Collapsed="true">
+    <Position X="3" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgCAAAAAAAgIAAAAkAAAACAAAAAAAAAA=</HashCode>
+      <FileName>CipasLegendStyle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CipasNumericScaleBarStyle" Collapsed="true">
+    <Position X="7.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAACAAAAAAAAIAAAAAAABEAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>CipasNumericscalebarstyle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasScaleBarStyle" Collapsed="true">
+    <Position X="4" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIIAAAAAAAAAAIAAAAAAAAEAAAACAAABABAAAA=</HashCode>
+      <FileName>CipasScaleBarStyle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasSingleBoxScaleBarStyle" Collapsed="true">
+    <Position X="0.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAIAAAAAAAAEAAACAAAAAAAAAAA=</HashCode>
+      <FileName>CipasSingleBoxScaleBarStyle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasTemplateModel" Collapsed="true">
+    <Position X="24.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABBAAAAAAQgAAAAIAAAAAACAAAAAAAAAAAAQgQAAAA=</HashCode>
+      <FileName>CipasTemplateModel.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CipasTicksScaleBarStyle" Collapsed="true">
+    <Position X="3" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAIAAAQAAEAEQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CipasTicksscalebarstyle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_CipasComposerLegendLayersDialogBase" Collapsed="true">
+    <Position X="0.5" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAgQAIAAAAIAAAAAAAAA=</HashCode>
+      <FileName>ui_ciapscomposerlegendlayersdialogbase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_CipasComposerArrowWidgetBase" Collapsed="true">
+    <Position X="15.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EABAgAAAAIAAAAAAEAABAAAAAAQAIQAAAAAAAABAAEA=</HashCode>
+      <FileName>ui_cipascomposerarrowwidgetbase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_CipasComposerBase" Collapsed="true">
+    <Position X="12.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kYFEACC0ABIYKkTmHMCAAAmCAIUg6YGIGqQBbSMCxEI=</HashCode>
+      <FileName>ui_cipascomposerbase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_CipasComposerLabelWidgetBase" Collapsed="true">
+    <Position X="14.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAARQAAAAgAAAgGAABBAQAACQEYAAAIIAAAAAABEg=</HashCode>
+      <FileName>ui_cipascomposerlabelwidgetbase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_CipasComposerLegendItemDialogBase" Collapsed="true">
+    <Position X="9.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAgAAgAAAAAAAAAAAQAIAAAAIAAAAAAAAA=</HashCode>
+      <FileName>ui_cipascomposerlegenditemdialogbase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_CipasComposerLegendWidgetBase" Collapsed="true">
+    <Position X="6.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GIAIDAAAAIAAY0iAEAEABCEIAAQAMYCAAIIABAYDIEg=</HashCode>
+      <FileName>ui_cipascomposerlegendwidgetbase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_CipasComposerMapWidgetBase" Collapsed="true">
+    <Position X="14.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAEAAAIMAKAFAkDAWQgAVo4AIAZAIJJQAIBEsYDAQHA=</HashCode>
+      <FileName>ui_cipascomposermapwidgetbase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_CipasComposerPictureWidgetBase" Collapsed="true">
+    <Position X="3.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABABAAGAAAAAMAAAYgIAJAgCAAAAAABEA=</HashCode>
+      <FileName>ui_cipascomposerpicturewidgetbase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_CipasComposerScaleBarWidgetBase" Collapsed="true">
+    <Position X="0.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgEAAQBAIAEAAAgEAAggAAIgQQAJAAAAYAAUoAABEA=</HashCode>
+      <FileName>ui_cipascomposerscalebarwidgetbase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_CipasComposerShapeWidgetBase" Collapsed="true">
+    <Position X="11.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEgAgAAIAAEEQAAAAAAAAAAAYAIAAAAIAAAAAAAEA=</HashCode>
+      <FileName>ui_cipascomposershapewidgetbase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_CipasCompositionWidgetBase" Collapsed="true">
+    <Position X="11.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AYQMCAAICIAEBBEAIABApEMIAAUAIgCAgLAhAAAoAHI=</HashCode>
+      <FileName>ui_cipascompositionwidgetbase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CipasComposerItemCommand" Collapsed="true">
+    <Position X="6.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQkAgAKEAAAAAAAQAAEAAhAAIAAIAAAAAAAAAAJAAAA=</HashCode>
+      <FileName>CipasComposerItemCommand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CipasComposerMergeCommand" Collapsed="true">
+    <Position X="6.5" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAQAACAIAAAAAAAAgA=</HashCode>
+      <FileName>CipasComposerItemCommand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasComposerLabel" Collapsed="true">
+    <Position X="21.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIogEAAAAQCAAgAQASCAAAKCIQCBgAAIgCIAAAUCEoI=</HashCode>
+      <FileName>CipasComposerLabel.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CipasItemCommand" Collapsed="true">
+    <Position X="17.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQkAgAKEAAAAAAAAAAGAABAAIAAIAAAgAAAAAAJAAAA=</HashCode>
+      <FileName>Cipasitemcommand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CipasMergeCommand" Collapsed="true">
+    <Position X="17.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAKAAAAIAAAgA=</HashCode>
+      <FileName>Cipasitemcommand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasMapToPixel" Collapsed="true">
+    <Position X="26" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AARAAQAAAAAAAAIAAoAAAAAgAggEECDEAAAIAQIACAA=</HashCode>
+      <FileName>CipasMapToPixel.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasPaperItem" Collapsed="true">
+    <Position X="6" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgQAAAAAAAAAAAAAAEAAAICAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CipasPaperItem.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasVector" Collapsed="true">
+    <Position X="27.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAACAAAAEAAAAgAQAAEAAAAAABgAABAAAA=</HashCode>
+      <FileName>CipasPoint.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasPoint" Collapsed="true">
+    <Position X="27.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAARAAIAAAIAAAAAAASGBQAARQAAAAAAAABoAAAQAAA=</HashCode>
+      <FileName>CipasPoint.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasRectangle" Collapsed="true">
+    <Position X="29.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IBgIAEEBAAAQcARAQAQAlQwKB0AAAADAAAAggEAAUAA=</HashCode>
+      <FileName>CipasRectangle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasRenderContext" Collapsed="true">
+    <Position X="31.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RACAABMAEAFQAEAAIAgAAAEAAABAAQAAFgAGAkMFAOI=</HashCode>
+      <FileName>CipasRenderContext.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasComposer" Collapsed="true">
+    <Position X="12.5" Y="17.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>piQCm0kZwAEkJJO2zihYwNbCqAkmZLBfdaKGAJhQoyA=</HashCode>
+      <FileName>CipasComposer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasTemplateTree" Collapsed="true">
+    <Position X="26" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAQAQIgAAAQABgAFACRQAABAIAAiAAAAIYAkQgkgBEA=</HashCode>
+      <FileName>CipasTemplateTree.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasComposerView" Collapsed="true">
+    <Position X="27.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AE+ICAAggQFwJAAUpIgCJADwAAGQASEGABIBABMYgQA=</HashCode>
+      <FileName>CipasComposerView.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasComposerItemWidget" Collapsed="true">
+    <Position X="8.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAEAAgAAAAADAAAAAAAAAAAAAQAQAACAAEAAAABAAAA=</HashCode>
+      <FileName>CipasComposerItemWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasComposerPictureWidget" Collapsed="true">
+    <Position X="3.5" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RAQIAAAAQAAAAAAEQAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CipasComposerPictureWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasCompositionWidget" Collapsed="true">
+    <Position X="11.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BOAABAAEACAAhg0QEIgQAACACQAFJAABAABAAgBBBoM=</HashCode>
+      <FileName>CipasCompositionWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasComposerLabelWidget" Collapsed="true">
+    <Position X="14.5" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgACAgAAAAAAARggCAAAAAACBAAAgAMgAAAAEAA=</HashCode>
+      <FileName>CipasComposerLabelWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasAddRemoveItemCommand" Collapsed="true">
+    <Position X="26" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAECAAgAAAAAAEAAACgAAAAAAAAAAAAAABAAgI=</HashCode>
+      <FileName>CipasAddRemoveItemCommand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasComposerShape" Collapsed="true">
+    <Position X="15" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACgCAAAAiaOIgAAAAgAAgAICgAIBMAAACAAAAAAAAAA=</HashCode>
+      <FileName>CipasComposerShape.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasComposerScaleBar" Collapsed="true">
+    <Position X="19.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAoAAgAIg6AAhIQAIgkBgAICAACNhagELAohhAIGAQo=</HashCode>
+      <FileName>CipasComposerScaleBar.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasComposerArrowWidget" Collapsed="true">
+    <Position X="15.5" Y="17.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAAAIAAAAAAAAAAAEAAAgAAAAAgAAAAACACAQ=</HashCode>
+      <FileName>CipasComposerArrowWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasComposerScaleBarWidget" Collapsed="true">
+    <Position X="0.5" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RIACAAIAAoAAAQAAAAwAAAAAIKACIAAAAAABAAAAIAA=</HashCode>
+      <FileName>CipasComposerScaleBarWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasComposerShapeWidget" Collapsed="true">
+    <Position X="11.5" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAgAAAQggAAAAgAAAAAAAAgEAAAAAACAA=</HashCode>
+      <FileName>CipasComposerShapeWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasComposerLegend" Collapsed="true">
+    <Position X="1.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>jGgLJgIQYEWFTCDMEACkqALCQUQlkiggEOIQqhBOBgA=</HashCode>
+      <FileName>CipasComposerLegend.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CipasComposerItemGroup" Collapsed="true">
+    <Position X="8.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAACgCACAAAAAiAAAICAAABAAAAAQAAIABAAAA=</HashCode>
+      <FileName>CipasComposerItemgroup.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasComposerGLW" Collapsed="true">
+    <Position X="10.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>xWsEMlCxSwTBSJBADU+uIm6eYHD7Uq7IUoTIiIk1I6Q=</HashCode>
+      <FileName>CipasComposerGLW.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasComposerGLWidget" Collapsed="true">
+    <Position X="14.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wgEDAAMAA0CAAQAAQAAgQAABAAAAAEAAxAIBGAECAIA=</HashCode>
+      <FileName>CipasComposerGLWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasComposerLegendWidget" Collapsed="true">
+    <Position X="6.5" Y="17.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAgAiACAkCA4AMAgAMEEgQAwAgKIBgQgAEAAAQAACA=</HashCode>
+      <FileName>CipasComposerLegendWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasLegendModel" Collapsed="true">
+    <Position X="31.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgCCBgUAAAAAABEgAQEQAICAEAAAAAAIQAAAABAQAQ=</HashCode>
+      <FileName>CipasLegendModel.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_CipasComposerItemWidgetBase" Collapsed="true">
+    <Position X="8.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAIAAAAAAAAAAAAAAAAQAIIAAAAQQgAAIAgA=</HashCode>
+      <FileName>ui_ciapscomposeritemwidgetbase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IDPComposer" Collapsed="true">
+    <Position X="27.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAQgIEAAAQAAAEAAAgAAAAIAAACIAAAABgAA=</HashCode>
+      <FileName>IDPComposer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ComposerView" Collapsed="true">
+    <Position X="26" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABoAAAAAAABAAAEUAAAIIABAgAAQIAQAIAAAAAAAAAA=</HashCode>
+      <FileName>ComposerView.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AttrDockWidget" Collapsed="true">
+    <Position X="24.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AttrDockWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ComposerToolBar" Collapsed="true">
+    <Position X="24.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>ComposerToolBar.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CComposerItem" Collapsed="true">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAiwgYABhTCAgGAaQuSwAJSECKxg0QgAAEBowBIRlA=</HashCode>
+      <FileName>ComposerItem.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasComposition" Collapsed="true">
+    <Position X="29.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAKABkhQ0JZo6CEvUKy8g04SoQDhMWAqEjACQmIAQmE=</HashCode>
+      <FileName>CipasComposition.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasComposerMap" Collapsed="true">
+    <Position X="12.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QD8AMBi5WAWJWoBwBd6MIm6KcFCzEizIW4TIyAg4g3A=</HashCode>
+      <FileName>CipasComposerMap.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasComposerPicture" Collapsed="true">
+    <Position X="17.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQwBAAAAAgCAIEEQAAQBAAICACABEIAAAAAQAAAFAAA=</HashCode>
+      <FileName>CipasComposerPicture.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCipasMapRenderer" Collapsed="true">
+    <Position X="24.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AICAAhiAAIVMGISAQgAAQCCDCBCASAgCEggQAYAQAAA=</HashCode>
+      <FileName>CipasMapRenderer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TempDockWidget" Collapsed="true">
+    <Position X="29.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TempDockWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_AttrDockWidget" Collapsed="true">
+    <Position X="17.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACQAAAAAAAAAAAAAAAAAAAAAAQAIIAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_AttrDockWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_IDPComposer" Collapsed="true">
+    <Position X="17.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQFEAAAAAAIASQRGBAAAAICCAAQgaIEAygQAZQIARAI=</HashCode>
+      <FileName>GeneratedFiles\ui_IDPComposer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_TempDockWidget" Collapsed="true">
+    <Position X="3.5" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BEQAAABAAAgAAABAAAQACAIIAAQwIACCAIBAAQAAAEA=</HashCode>
+      <FileName>GeneratedFiles\ui_TempDockWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::CipasComposerLegendLayersDialogBase" Collapsed="true">
+    <Position X="0.5" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ui_ciapscomposerlegendlayersdialogbase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::CipasComposerArrowWidgetBase" Collapsed="true">
+    <Position X="15.5" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ui_cipascomposerarrowwidgetbase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::CipasComposerBase" Collapsed="true">
+    <Position X="12.5" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ui_cipascomposerbase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::CipasComposerLabelWidgetBase" Collapsed="true">
+    <Position X="14.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ui_cipascomposerlabelwidgetbase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::CipasComposerLegendItemDialogBase" Collapsed="true">
+    <Position X="9.5" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ui_cipascomposerlegenditemdialogbase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::CipasComposerLegendWidgetBase" Collapsed="true">
+    <Position X="6.5" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ui_cipascomposerlegendwidgetbase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::CipasComposerMapWidgetBase" Collapsed="true">
+    <Position X="14.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ui_cipascomposermapwidgetbase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::CipasComposerPictureWidgetBase" Collapsed="true">
+    <Position X="3.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ui_cipascomposerpicturewidgetbase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::CipasComposerScaleBarWidgetBase" Collapsed="true">
+    <Position X="0.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ui_cipascomposerscalebarwidgetbase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::CipasComposerShapeWidgetBase" Collapsed="true">
+    <Position X="11.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ui_cipascomposershapewidgetbase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::CipasCompositionWidgetBase" Collapsed="true">
+    <Position X="11.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ui_cipascompositionwidgetbase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::CipasComposerItemWidgetBase" Collapsed="true">
+    <Position X="8.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ui_ciapscomposeritemwidgetbase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::AttrDockWidget" Collapsed="true">
+    <Position X="17.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_AttrDockWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::IDPComposer" Collapsed="true">
+    <Position X="17.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_IDPComposer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::TempDockWidget" Collapsed="true">
+    <Position X="3.5" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_TempDockWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="_TemplateStruct" Collapsed="true">
+    <Position X="19.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAgAAIAAAAAAAQAAAAAAAAAQAAAAAAIAAA=</HashCode>
+      <FileName>Tempalte.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="CipasCompositionPaper" Collapsed="true">
+    <Position X="24.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAABAAAAAAAAAAAAAAAAAAAAAgAAAAAAAI=</HashCode>
+      <FileName>CipasCompositionWidget.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="QIMAGEMAP" Collapsed="true">
+    <Position X="26" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CipasComposerGLW.cpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="TemplateStruct" Collapsed="true">
+    <Position X="19.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tempalte.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="GroupLayerInfo" Collapsed="true">
+    <Position X="24.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CipasComposerLegendWidget.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

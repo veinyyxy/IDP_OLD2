@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RadarToolBar</class>
+ <widget class="QToolBar" name="RadarToolBar">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>706</width>
+    <height>87</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>RadarToolBar</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>20</width>
+    <height>20</height>
+   </size>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextUnderIcon</enum>
+  </property>
+  <action name="actionPlot">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/radarToolBar/pro.png</normaloff>:/images/radarToolBar/pro.png</iconset>
+   </property>
+   <property name="text">
+    <string>剖面图</string>
+   </property>
+   <property name="toolTip">
+    <string>剖面</string>
+   </property>
+  </action>
+  <action name="actionWin4">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/radarToolBar/win4.png</normaloff>:/images/radarToolBar/win4.png</iconset>
+   </property>
+   <property name="text">
+    <string>四联屏</string>
+   </property>
+   <property name="toolTip">
+    <string>四联屏</string>
+   </property>
+  </action>
+  <action name="actionArea">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/radarToolBar/area.png</normaloff>:/images/radarToolBar/area.png</iconset>
+   </property>
+   <property name="text">
+    <string>面积统计</string>
+   </property>
+   <property name="toolTip">
+    <string>面积统计</string>
+   </property>
+  </action>
+  <action name="actionFuzzy">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/radarToolBar/fuzzy.png</normaloff>:/images/radarToolBar/fuzzy.png</iconset>
+   </property>
+   <property name="text">
+    <string>速度退模糊</string>
+   </property>
+   <property name="toolTip">
+    <string>速度退模糊</string>
+   </property>
+  </action>
+  <action name="actionDB2">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/defaultToolBar/config.png</normaloff>:/images/defaultToolBar/config.png</iconset>
+   </property>
+   <property name="text">
+    <string>等值面生成</string>
+   </property>
+   <property name="toolTip">
+    <string>等值面生成</string>
+   </property>
+  </action>
+  <action name="action2D">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/radarToolBar/_2d.png</normaloff>:/images/radarToolBar/_2d.png</iconset>
+   </property>
+   <property name="text">
+    <string>二维</string>
+   </property>
+  </action>
+  <action name="action3D">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/radarToolBar/_3d.png</normaloff>:/images/radarToolBar/_3d.png</iconset>
+   </property>
+   <property name="text">
+    <string>三维</string>
+   </property>
+  </action>
+  <action name="actionVolumeRender">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/radarToolBar/fuzzy.png</normaloff>:/images/radarToolBar/fuzzy.png</iconset>
+   </property>
+   <property name="text">
+    <string>体绘制</string>
+   </property>
+   <property name="toolTip">
+    <string>体绘制</string>
+   </property>
+  </action>
+  <action name="actionClipPlane">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/radarToolBar/fuzzy.png</normaloff>:/images/radarToolBar/fuzzy.png</iconset>
+   </property>
+   <property name="text">
+    <string>地球剖面</string>
+   </property>
+   <property name="toolTip">
+    <string>添加地球剖面</string>
+   </property>
+  </action>
+  <action name="action_VTK">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/radarToolBar/pro.png</normaloff>:/images/radarToolBar/pro.png</iconset>
+   </property>
+   <property name="text">
+    <string>剖面三维</string>
+   </property>
+  </action>
+  <action name="actionAnimatic">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/radarToolBar/fuzzy.png</normaloff>:/images/radarToolBar/fuzzy.png</iconset>
+   </property>
+   <property name="text">
+    <string>动画</string>
+   </property>
+   <property name="toolTip">
+    <string>动画</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="mainwindow.qrc"/>
+ </resources>
+ <connections/>
+</ui>

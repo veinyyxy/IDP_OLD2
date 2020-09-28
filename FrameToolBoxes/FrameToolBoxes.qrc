@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/standardTools/close.png</file>
+        <file>images/standardTools/config.png</file>
+        <file>images/standardTools/data.png</file>
+        <file>images/standardTools/exit.png</file>
+        <file>images/standardTools/help.png</file>
+        <file>images/standardTools/open.png</file>
+        <file>images/standardTools/skin.png</file>
+        <file>images/standardTools/bg.bmp</file>
+        <file>images/standardTools/map.png</file>
+        <file>images/standardTools/newproject.png</file>
+        <file>images/mapTools/chart.png</file>
+        <file>images/mapTools/displaySettings.png</file>
+        <file>images/mapTools/mapCenter.png</file>
+        <file>images/mapTools/mapSetting.png</file>
+        <file>images/mapTools/netnet.png</file>
+        <file>images/mapTools/report.png</file>
+        <file>images/windowControl/Overlap.png</file>
+        <file>images/windowControl/tile.png</file>
+       <file>images/windowControl/float.png</file>
+       <file>images/windowControl/dock.png</file>
+       <file>images/windowControl/close.png</file>
+       <file>images/windowControl/fullscreen.png</file>
+       <file>images/windowControl/settings.png</file>
+    </qresource>
+</RCC>

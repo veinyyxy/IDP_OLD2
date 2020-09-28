@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CZToolBar</class>
+ <widget class="QToolBar" name="CZToolBar">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>569</width>
+    <height>78</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CZToolBar</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>20</width>
+    <height>20</height>
+   </size>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextUnderIcon</enum>
+  </property>
+  <action name="actionDIY">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/czToolBar/window_new.png</normaloff>:/images/czToolBar/window_new.png</iconset>
+   </property>
+   <property name="text">
+    <string>自选区域</string>
+   </property>
+   <property name="toolTip">
+    <string>自选区域</string>
+   </property>
+  </action>
+  <addaction name="actionDIY"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="mainwindow.qrc"/>
+ </resources>
+ <connections/>
+</ui>

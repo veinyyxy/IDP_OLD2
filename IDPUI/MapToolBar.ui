@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MapToolBar</class>
+ <widget class="QToolBar" name="MapToolBar">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>563</width>
+    <height>66</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MapToolBar</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>20</width>
+    <height>20</height>
+   </size>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <action name="actionCenter">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/mapToolBar/center.png</normaloff>:/images/mapToolBar/center.png</iconset>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+   <property name="toolTip">
+    <string>返回原点</string>
+   </property>
+  </action>
+  <action name="actionTop">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/mapToolBar/top.png</normaloff>:/images/mapToolBar/top.png</iconset>
+   </property>
+   <property name="text">
+    <string>上移</string>
+   </property>
+  </action>
+  <action name="actionBottom">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/mapToolBar/bottom.png</normaloff>:/images/mapToolBar/bottom.png</iconset>
+   </property>
+   <property name="text">
+    <string>下移</string>
+   </property>
+  </action>
+  <action name="actionLeft">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/mapToolBar/left.png</normaloff>:/images/mapToolBar/left.png</iconset>
+   </property>
+   <property name="text">
+    <string>左移</string>
+   </property>
+  </action>
+  <action name="actionRight">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/mapToolBar/right.png</normaloff>:/images/mapToolBar/right.png</iconset>
+   </property>
+   <property name="text">
+    <string>右移</string>
+   </property>
+   <property name="toolTip">
+    <string>右移</string>
+   </property>
+  </action>
+  <action name="actionMZoomIn">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/mapToolBar/Ex_ZoomIn.png</normaloff>:/images/mapToolBar/Ex_ZoomIn.png</iconset>
+   </property>
+   <property name="text">
+    <string>放大</string>
+   </property>
+   <property name="toolTip">
+    <string>按比例放大</string>
+   </property>
+  </action>
+  <action name="actionMZoomout">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/mapToolBar/Ex_ZoomOut.png</normaloff>:/images/mapToolBar/Ex_ZoomOut.png</iconset>
+   </property>
+   <property name="text">
+    <string>缩小</string>
+   </property>
+  </action>
+  <addaction name="actionTop"/>
+  <addaction name="actionBottom"/>
+  <addaction name="actionLeft"/>
+  <addaction name="actionRight"/>
+  <addaction name="actionMZoomout"/>
+  <addaction name="actionMZoomIn"/>
+  <addaction name="actionCenter"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="mainwindow.qrc"/>
+ </resources>
+ <connections/>
+</ui>

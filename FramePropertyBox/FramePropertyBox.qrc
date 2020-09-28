@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/MapLayer/map.png</file>
+        <file>images/MapLayer/hide.png</file>
+        <file>images/MapLayer/map_add.png</file>
+        <file>images/MapLayer/map_delete.png</file>
+        <file>images/MapLayer/map_property.png</file>
+        <file>images/MapLayer/move_task_down.png</file>
+        <file>images/MapLayer/move_task_up.png</file>
+        <file>images/MapLayer/show.png</file>
+    </qresource>
+</RCC>

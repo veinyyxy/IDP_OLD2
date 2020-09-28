@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="nn">
+      <UniqueIdentifier>{334dfaa4-2019-46f1-bfe8-96fad94b9daa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stationinterpolation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CressmanInterpolation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Interpolation_InverseDistance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Interpolation_NaturalNeighbour.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Interpolation_Triangle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nn\delaunay.c">
+      <Filter>nn</Filter>
+    </ClCompile>
+    <ClCompile Include="nn\hash.c">
+      <Filter>nn</Filter>
+    </ClCompile>
+    <ClCompile Include="nn\istack.c">
+      <Filter>nn</Filter>
+    </ClCompile>
+    <ClCompile Include="nn\lpi.c">
+      <Filter>nn</Filter>
+    </ClCompile>
+    <ClCompile Include="nn\nnai.c">
+      <Filter>nn</Filter>
+    </ClCompile>
+    <ClCompile Include="nn\nncommon.c">
+      <Filter>nn</Filter>
+    </ClCompile>
+    <ClCompile Include="nn\nnpi.c">
+      <Filter>nn</Filter>
+    </ClCompile>
+    <ClCompile Include="nn\triangle.c">
+      <Filter>nn</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stationinterpolation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stationinterpolation_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CressmanInterpolation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interpolation_InverseDistance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interpolation_NaturalNeighbour.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interpolation_Triangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nn\delaunay.h">
+      <Filter>nn</Filter>
+    </ClInclude>
+    <ClInclude Include="nn\hash.h">
+      <Filter>nn</Filter>
+    </ClInclude>
+    <ClInclude Include="nn\istack.h">
+      <Filter>nn</Filter>
+    </ClInclude>
+    <ClInclude Include="nn\nan.h">
+      <Filter>nn</Filter>
+    </ClInclude>
+    <ClInclude Include="nn\nn.h">
+      <Filter>nn</Filter>
+    </ClInclude>
+    <ClInclude Include="nn\triangle.h">
+      <Filter>nn</Filter>
+    </ClInclude>
+    <ClInclude Include="nn\version.h">
+      <Filter>nn</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

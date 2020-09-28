@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5C851B30-EC38-4F9E-87BC-C2FB280B8857}</ProjectGuid>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Debug\GDALDebug.props" />
+    <Import Project="..\Debug\GEOSDebug.props" />
+    <Import Project="..\Debug\OSGDebug.props" />
+    <Import Project="..\Debug\QTDIRDebug.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Debug\GEOSDebug.props" />
+    <Import Project="..\Debug\OSGDebug.props" />
+    <Import Project="..\Debug\QTDIRDebug.props" />
+    <Import Project="..\Release\GDALDebug.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../Debug/Bin/</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\$(Configuration)\Bin\</OutDir>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\GeosOnTheOsg;../XMLProvider;$(OSG_INCLUDE);$(QTDIR)\include;..\radarsingledataprovider;..\IDPUI;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\lib;..\Debug\lib;$(OutDir);$(LibraryPath)</LibraryPath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\GeosOnTheOsg;../XMLProvider;$(OSG_INCLUDE);$(QTDIR)\include;..\radarsingledataprovider;..\IDPUI;..\GDataTypes;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\lib;..\Release\lib;$(OutDir);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_CORE_LIB;QT_XML_LIB;QT_OPENGL_LIB;RADARSTRUCTDATAPROVIDER_LIB;RADARSINGLEDATAPROVIDER_LIB;GEOSONTHEOSG_LIB;QT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\qtmain;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtXml;$(QTDIR)\include\QtOpenGL;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>proj_i.lib;gdal_i.lib;GDataTypes.lib;XMLProvider.lib;qtmaind.lib;geos_c.lib;geos.lib;GeosOnTheOsg.lib;QtCored4.lib;QtGuid4.lib;OpenThreadsd.lib;osgAnimationd.lib;osgd.lib;osgDBd.lib;osgFXd.lib;osgGAd.lib;osgManipulatord.lib;osgParticled.lib;osgPresentationd.lib;osgQtd.lib;osgTextd.lib;radarsingledataprovider.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>..\$(Configuration)\Lib\$(ProjectName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_XML_LIB;QT_OPENGL_LIB;RADARSTRUCTDATAPROVIDER_LIB;RADARSINGLEDATAPROVIDER_LIB;GEOSONTHEOSG_LIB;QT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\qtmain;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtXml;$(QTDIR)\include\QtOpenGL;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>QtCore4.lib;QtGui4.lib;proj_i.lib;gdal_i.lib;geos.lib;OpenThreads.lib;osg.lib;osgText.lib;GeosOnTheOsg.lib;GDataTypes.lib;XMLProvider.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>..\$(Configuration)\Lib\$(ProjectName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Draw_LRM_Product.cpp" />
+    <ClCompile Include="Draw_M_Product.cpp" />
+    <ClCompile Include="Draw_SBT_Product.cpp" />
+    <ClCompile Include="Draw_VWP_Product.cpp" />
+    <ClCompile Include="ProductDraw_MSBT.cpp" />
+    <ClCompile Include="ProductDraw_SWP.cpp" />
+    <ClCompile Include="ProductDraw_TITAN.cpp" />
+    <ClCompile Include="ProductRead.cpp" />
+    <ClCompile Include="ProductStructDraw_EVP.cpp" />
+    <ClCompile Include="ProductStructDraw_HI.cpp" />
+    <ClCompile Include="ProductStructDraw_SCI.cpp" />
+    <ClCompile Include="ProductStructDraw_SCT.cpp" />
+    <ClCompile Include="ProductStructDraw_TVS.cpp" />
+    <ClCompile Include="ProductStructDraw_VAD.cpp" />
+    <ClCompile Include="radarstructdataprovider.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Draw_LRM_Product.h" />
+    <ClInclude Include="Draw_M_Product.h" />
+    <ClInclude Include="Draw_SBT_Product.h" />
+    <ClInclude Include="Draw_VWP_Product.h" />
+    <ClInclude Include="ProductDraw_MSBT.h" />
+    <ClInclude Include="ProductDraw_SWP.h" />
+    <ClInclude Include="ProductDraw_TITAN.h" />
+    <ClInclude Include="ProductRead.h" />
+    <ClInclude Include="ProductStructDraw_EVP.h" />
+    <ClInclude Include="ProductStructDraw_HI.h" />
+    <ClInclude Include="ProductStructDraw_SCI.h" />
+    <ClInclude Include="ProductStructDraw_SCT.h" />
+    <ClInclude Include="ProductStructDraw_TVS.h" />
+    <ClInclude Include="ProductStructDraw_VAD.h" />
+    <ClInclude Include="radarstructdataprovider.h" />
+    <ClInclude Include="radarstructdataprovider_global.h" />
+    <ClInclude Include="RadarStructProductionDraw.h" />
+    <ClInclude Include="Struct_277_SCI.h" />
+    <ClInclude Include="Struct_278_SCT.h" />
+    <ClInclude Include="Struct_281_SBT.h" />
+    <ClInclude Include="Struct_285_EVP_269_VWP_268_VAD.h" />
+    <ClInclude Include="Struct_288_SWP.h" />
+    <ClInclude Include="struct_291_HI.h" />
+    <ClInclude Include="Struct_292_M.h" />
+    <ClInclude Include="Struct_293_TVS.h" />
+    <ClInclude Include="Struct_296_TITAN.h" />
+    <ClInclude Include="Struct_516_MSBT.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties UicDir=".\GeneratedFiles" MocDir=".\GeneratedFiles\$(ConfigurationName)" MocOptions="" RccDir=".\GeneratedFiles" lupdateOnBuild="0" QtVersion_x0020_Win32="qt4.8.5" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

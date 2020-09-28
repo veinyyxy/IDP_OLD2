@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindowClass</class>
+ <widget class="QMainWindow" name="MainWindowClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>718</width>
+    <height>446</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>气侯业务数据交互处理系统</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="mainwindow.qrc">
+    <normaloff>:/images/logo.png</normaloff>:/images/logo.png</iconset>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>40</width>
+    <height>40</height>
+   </size>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextUnderIcon</enum>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>718</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="fileMenu">
+    <property name="title">
+     <string>文件[&amp;F]</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>视图[&amp;V]</string>
+    </property>
+    <addaction name="actionLeftDockW"/>
+    <addaction name="actionArrt"/>
+    <addaction name="actionCommonToolBar"/>
+    <addaction name="action_5"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>地图[&amp;M]</string>
+    </property>
+    <widget class="QMenu" name="menu_6">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="title">
+      <string>显示范围设置</string>
+     </property>
+     <addaction name="action_22"/>
+     <addaction name="action_23"/>
+    </widget>
+    <addaction name="actionMapSettings"/>
+    <addaction name="separator"/>
+    <addaction name="m_pActionGrid"/>
+    <addaction name="separator"/>
+    <addaction name="m_pActionM"/>
+    <addaction name="m_pActionL"/>
+    <addaction name="m_pActionLonLat"/>
+    <addaction name="m_ActionProjCenter"/>
+    <addaction name="separator"/>
+    <addaction name="actionDisplaySettings"/>
+    <addaction name="separator"/>
+    <addaction name="menu_6"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>窗口[&amp;W]</string>
+    </property>
+    <addaction name="actionCascad"/>
+    <addaction name="actionTile"/>
+    <addaction name="actionFullScreen"/>
+    <addaction name="separator"/>
+    <addaction name="actionOutMID"/>
+    <addaction name="actionInMID"/>
+    <addaction name="actionClose"/>
+    <addaction name="separator"/>
+    <addaction name="actionCloseAll"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>帮助[&amp;H]</string>
+    </property>
+    <addaction name="actionHelp"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <widget class="QMenu" name="menu_7">
+    <property name="title">
+     <string>雷达数据[&amp;R]</string>
+    </property>
+    <addaction name="actionRadarData"/>
+    <addaction name="separator"/>
+    <addaction name="actionViewR"/>
+    <addaction name="action_RadarControl"/>
+    <addaction name="actionWin4"/>
+    <addaction name="actionArea"/>
+    <addaction name="actionAnimatic"/>
+    <addaction name="separator"/>
+    <addaction name="action2D"/>
+    <addaction name="action3D"/>
+   </widget>
+   <widget class="QMenu" name="menu_13">
+    <property name="title">
+     <string>专题制作</string>
+    </property>
+    <addaction name="actionThematic"/>
+    <addaction name="action_report"/>
+   </widget>
+   <widget class="QMenu" name="menu_14">
+    <property name="title">
+     <string>系统设置</string>
+    </property>
+    <addaction name="actionConfig"/>
+   </widget>
+   <addaction name="fileMenu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_7"/>
+   <addaction name="menu_13"/>
+   <addaction name="menu_14"/>
+   <addaction name="menu_5"/>
+  </widget>
+  <action name="actionLeftDockW">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>图层控制</string>
+   </property>
+  </action>
+  <action name="actionArrt">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>图层属性</string>
+   </property>
+  </action>
+  <action name="actionData">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>数据列表</string>
+   </property>
+  </action>
+  <action name="actionViewR">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>雷达右侧属性视口</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/images/defaultToolBar/open.png</normaloff>:/images/defaultToolBar/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </action>
+  <action name="actionCommonToolBar">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>通用工具条</string>
+   </property>
+  </action>
+  <action name="actionDisplaySettings">
+   <property name="text">
+    <string>显示设置</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>动画设置</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="text">
+    <string>时间轴 </string>
+   </property>
+  </action>
+  <action name="m_pActionGrid">
+   <property name="text">
+    <string>添加经纬网</string>
+   </property>
+  </action>
+  <action name="m_pActionM">
+   <property name="text">
+    <string>墨卡托投影</string>
+   </property>
+  </action>
+  <action name="m_pActionL">
+   <property name="text">
+    <string>兰勃特投影</string>
+   </property>
+  </action>
+  <action name="m_pActionLonLat">
+   <property name="text">
+    <string>等经纬投影</string>
+   </property>
+  </action>
+  <action name="m_ActionProjCenter">
+   <property name="text">
+    <string>投影中心设置</string>
+   </property>
+  </action>
+  <action name="m_pActionLookAt">
+   <property name="text">
+    <string>观察中心设置</string>
+   </property>
+  </action>
+  <action name="action_22">
+   <property name="text">
+    <string>中国 </string>
+   </property>
+  </action>
+  <action name="action_23">
+   <property name="text">
+    <string>自定义显示范围 </string>
+   </property>
+  </action>
+  <action name="actionCascad">
+   <property name="text">
+    <string>窗口层叠 </string>
+   </property>
+  </action>
+  <action name="actionTile">
+   <property name="text">
+    <string>窗口平铺</string>
+   </property>
+  </action>
+  <action name="actionOutMID">
+   <property name="text">
+    <string>窗口浮动</string>
+   </property>
+  </action>
+  <action name="actionInMID">
+   <property name="text">
+    <string>窗口锁定</string>
+   </property>
+  </action>
+  <action name="actionCloseAll">
+   <property name="text">
+    <string>关闭所有</string>
+   </property>
+   <property name="toolTip">
+    <string>关闭所有</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>窗口关闭</string>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="text">
+    <string>系统帮助</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>关于本系统 </string>
+   </property>
+  </action>
+  <action name="action_40">
+   <property name="text">
+    <string>产品属性 </string>
+   </property>
+  </action>
+  <action name="action_41">
+   <property name="text">
+    <string>显示距离圈</string>
+   </property>
+  </action>
+  <action name="action_44">
+   <property name="text">
+    <string>鼠标同步</string>
+   </property>
+  </action>
+  <action name="action_47">
+   <property name="text">
+    <string>雷达球面三维</string>
+   </property>
+  </action>
+  <action name="action_48">
+   <property name="text">
+    <string>雷达数据体三维</string>
+   </property>
+  </action>
+  <action name="action_VTK">
+   <property name="text">
+    <string>三维剖切分析</string>
+   </property>
+  </action>
+  <action name="action_51">
+   <property name="text">
+    <string>平面剖切分析</string>
+   </property>
+  </action>
+  <action name="action_fenxi">
+   <property name="text">
+    <string>等值面分析</string>
+   </property>
+  </action>
+  <action name="actionArea">
+   <property name="text">
+    <string>面积统计</string>
+   </property>
+  </action>
+  <action name="actionFullScreen">
+   <property name="text">
+    <string>窗口全屏</string>
+   </property>
+  </action>
+  <action name="action_13">
+   <property name="text">
+    <string>自定义</string>
+   </property>
+  </action>
+  <action name="actionConfig">
+   <property name="text">
+    <string>系统设置</string>
+   </property>
+  </action>
+  <action name="actionMapSettings">
+   <property name="text">
+    <string>地图设置</string>
+   </property>
+  </action>
+  <action name="action_20">
+   <property name="text">
+    <string>基本反射率</string>
+   </property>
+  </action>
+  <action name="action_21">
+   <property name="text">
+    <string>基本速度</string>
+   </property>
+  </action>
+  <action name="actionZuhefanshelv">
+   <property name="text">
+    <string>组合反射率 </string>
+   </property>
+  </action>
+  <action name="action_25">
+   <property name="text">
+    <string>回波顶高</string>
+   </property>
+  </action>
+  <action name="action_30">
+   <property name="text">
+    <string>风廓线</string>
+   </property>
+  </action>
+  <action name="action_33">
+   <property name="text">
+    <string>垂直累计液态水含量</string>
+   </property>
+  </action>
+  <action name="action_39">
+   <property name="text">
+    <string>风暴追踪</string>
+   </property>
+  </action>
+  <action name="action_43">
+   <property name="text">
+    <string>冰雹指数</string>
+   </property>
+  </action>
+  <action name="action_45">
+   <property name="text">
+    <string>中尺度气旋</string>
+   </property>
+  </action>
+  <action name="action_46">
+   <property name="text">
+    <string>一小时累计降水</string>
+   </property>
+  </action>
+  <action name="action_49">
+   <property name="text">
+    <string>三小时累计降水</string>
+   </property>
+  </action>
+  <action name="actionCAPPI">
+   <property name="text">
+    <string>CAPPI反射率</string>
+   </property>
+  </action>
+  <action name="action_53">
+   <property name="text">
+    <string>一小时降水估测</string>
+   </property>
+  </action>
+  <action name="action_54">
+   <property name="text">
+    <string>组合反射率</string>
+   </property>
+  </action>
+  <action name="action_55">
+   <property name="text">
+    <string>面绘制</string>
+   </property>
+  </action>
+  <action name="action_56">
+   <property name="text">
+    <string>体绘制</string>
+   </property>
+  </action>
+  <action name="action_57">
+   <property name="text">
+    <string>透明度设置</string>
+   </property>
+  </action>
+  <action name="action_58">
+   <property name="text">
+    <string>颜色配置</string>
+   </property>
+  </action>
+  <action name="actionThematic">
+   <property name="text">
+    <string>专题图制作</string>
+   </property>
+  </action>
+  <action name="action_report">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>专题报告制作</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>单站产品列表</string>
+   </property>
+  </action>
+  <action name="action_RadarControl">
+   <property name="text">
+    <string>雷达控制视口</string>
+   </property>
+  </action>
+  <action name="actionWin4">
+   <property name="text">
+    <string>低仰角四联屏</string>
+   </property>
+  </action>
+  <action name="action3D">
+   <property name="text">
+    <string>雷达三维显示</string>
+   </property>
+  </action>
+  <action name="action2D">
+   <property name="text">
+    <string>雷达二维显示</string>
+   </property>
+  </action>
+  <action name="actionAnimatic">
+   <property name="text">
+    <string>雷达动画</string>
+   </property>
+   <property name="toolTip">
+    <string>雷达动画</string>
+   </property>
+  </action>
+  <action name="actionRadarData">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>雷达基数据窗口</string>
+   </property>
+   <property name="toolTip">
+    <string>雷达基数据窗口</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="mainwindow.qrc"/>
+ </resources>
+ <connections/>
+</ui>

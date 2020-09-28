@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3245EAD2-FE63-4D06-BF3E-49E7EFDA5760}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GISExtend</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Debug\OSGDebug.props" />
+    <Import Project="..\Debug\GEOSDebug.props" />
+    <Import Project="..\Debug\OSGEARTH.props" />
+    <Import Project="..\Debug\GDALDebug.props" />
+    <Import Project="..\Debug\QTDIRDebug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Release\QTDIRRelease.props" />
+    <Import Project="..\Release\GDALRelease.props" />
+    <Import Project="..\Release\OSGEARTH.props" />
+    <Import Project="..\Release\GEOSRelease.props" />
+    <Import Project="..\Release\OSGRelease.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(QTDIR)/include;$(OSG_EARTH_INCLUDE);../XMLProvider;../GeosOnTheOsg;../GraphicsControler;$(IncludePath)</IncludePath>
+    <LibraryPath>$(QTDIR)/lib;..\$(Configuration)\Lib;$(OSG_EARTH_LIB);$(OSG_LIB);$(QTDIR)\lib;$(LibraryPath)</LibraryPath>
+    <OutDir>..\$(Configuration)\Bin</OutDir>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\$(Configuration)\Bin\</OutDir>
+    <IncludePath>../GraphicsControler;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>OpenThreadsd.lib;osgAnimationd.lib;osgd.lib;osgDBd.lib;osgFXd.lib;osgGAd.lib;osgManipulatord.lib;osgParticled.lib;osgPresentationd.lib;osgQtd.lib;osgShadowd.lib;osgSimd.lib;osgTerraind.lib;osgTextd.lib;osgUtild.lib;osgViewerd.lib;osgVolumed.lib;osgWidgetd.lib;osgEarthd.lib;osgEarthFeaturesd.lib;osgEarthUtild.lib;osgEarthSymbologyd.lib;QtCored4.lib;QtGuid4.lib;QtXmld4.lib;GeosOnTheOsg.lib;GraphicsControler.lib;geos.lib;gdal_i.lib;OPENGL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\$(Configuration)\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>..\$(Configuration)\Lib\$(ProjectName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(QTDIR)/include;$(OSG_EARTH_INCLUDE);../XMLProvider;../GeosOnTheOsg;$(IncludePath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>XMLProvider.lib;OpenThreads.lib;osgAnimation.lib;osg.lib;osgDB.lib;osgFX.lib;osgGA.lib;osgManipulator.lib;osgParticle.lib;osgPresentation.lib;osgQt.lib;osgShadow.lib;osgSim.lib;osgTerrain.lib;osgText.lib;osgUtil.lib;osgViewer.lib;osgVolume.lib;osgWidget.lib;osgEarth.lib;osgEarthFeatures.lib;osgEarthUtil.lib;osgEarthSymbology.lib;QtCore4.lib;QtGui4.lib;QtXml4.lib;GeosOnTheOsg.lib;GraphicsControler.lib;geos.lib;OPENGL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\$(Configuration)\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>..\$(Configuration)\Lib\$(ProjectName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ClipBoard.cpp" />
+    <ClCompile Include="Compass.cpp" />
+    <ClCompile Include="ExtendMap.cpp" />
+    <ClCompile Include="ExtendMapFactory.cpp" />
+    <ClCompile Include="GISMapManager.cpp" />
+    <ClCompile Include="idpEarthManipulator.cpp" />
+    <ClCompile Include="InterfaceFunction.cpp" />
+    <ClCompile Include="MarchingCubes.cpp" />
+    <ClCompile Include="OsgEarthBridge.cpp" />
+    <ClCompile Include="osgVolumeImp.cpp" />
+    <ClCompile Include="PlaneInfo.cpp" />
+    <ClCompile Include="RadarDataFromMarchingCubes.cpp" />
+    <ClCompile Include="VolumeAlgorithmFactory.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ClipBoard.h" />
+    <ClInclude Include="ClipPlaneInterface.h" />
+    <ClInclude Include="Compass.h" />
+    <ClInclude Include="ExtendMap.h" />
+    <ClInclude Include="ExtendMapFactory.h" />
+    <ClInclude Include="GISExtendConfig.h" />
+    <ClInclude Include="GISMapManager.h" />
+    <ClInclude Include="idpEarthManipulator.h" />
+    <ClInclude Include="InterfaceFunction.h" />
+    <ClInclude Include="InterpolationRadarDataInterface.h" />
+    <ClInclude Include="IsoSurface.h" />
+    <ClInclude Include="MarchingCubes.h" />
+    <ClInclude Include="MarchingCubesDataInterface.h" />
+    <ClInclude Include="OsgEarthBridge.h" />
+    <ClInclude Include="osgVolumeImp.h" />
+    <ClInclude Include="PlaneInfo.h" />
+    <ClInclude Include="RadarDataFromMarchingCubes.h" />
+    <ClInclude Include="RadarMarchingCubes.h" />
+    <ClInclude Include="VolumeAlgorithmFactory.h" />
+    <ClInclude Include="VolumeDraw.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
